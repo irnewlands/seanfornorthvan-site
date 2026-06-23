@@ -365,12 +365,15 @@ function Media() {
 function Contact() {
   return (
     <footer id="contact">
-      <img className="footerSignature" src="/assets/sean-signature.svg" alt="Sean Alexander" />
+      <img className="footerSignature"
+  src="/assets/SEAN ALEXANDER (2).svg"
+  alt="Sean Alexander for North Vancouver City Council"
+        />
       <p>Candidate for North Vancouver City Council</p>
       <p>
         <Mail size={16} /> sda.cnv.2026@gmail.com &nbsp; | &nbsp; seanfornorthvan.ca
       </p>
-      <p className="auth">Authorized by Sean for North Van | Financial Agent: __________</p>
+      <p className="auth"> Authorized by the Financial Agent for Sean Alexander </p>
     </footer>
   );
 }
