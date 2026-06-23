@@ -122,7 +122,7 @@ nav a {
       rgba(255,255,255,0.15)
     );
 }
-.hero > * {
+.hero > *:not(.heroFlag) {
   position: relative;
   z-index: 2;
 }
