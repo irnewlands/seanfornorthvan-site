@@ -105,13 +105,29 @@ function Volunteer(){return <section id="volunteer" className="section dark">
 </section>}
 
 function Donate(){return <section id="donate" className="section donate split">
-  <div>
-    <p className="eyebrow">Donate</p>
-    <h2>Help Sean connect with more residents.</h2>
-    <p>Every contribution helps the campaign print literature, host events, put up signs, reach voters online, and knock on more doors across North Vancouver.</p>
-    <p className="note">Donation processing can be connected here once the campaign’s financial agent and approved contribution process are finalized.</p>
-  </div>
-  <div className="donateBox"><DollarSign/><h3>Campaign contributions</h3><p>Only accept contributions through the campaign’s official compliant process.</p><a className="btn primary" href="#contact">Contact the Campaign</a></div>
+<div className="donateBox">
+  <DollarSign />
+
+  <h3>Help Build a More Connected North Vancouver</h3>
+
+  <p>
+This campaign is powered by residents who believe City Hall should listen before decisions are made.
+Your contribution helps fund community conversations, campaign materials, volunteer outreach, and voter engagement across North Vancouver.
+  </p>
+
+  <a
+    className="btn primary"
+    href="https://donorbox.org/seanfornorthvan?amount=30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Donate Now
+  </a>
+
+  <small>
+    Contributions are subject to Elections BC campaign finance rules.
+  </small>
+</div>
 </section>}
 
 function Media(){return <section className="section media">
