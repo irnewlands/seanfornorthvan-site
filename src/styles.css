@@ -88,12 +88,17 @@ nav a {
   content: "";
   position: absolute;
   inset: 0;
+
   background:
-    linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.9)),
-    url('/assets/north-vancouver-mountains.jpg') center center / cover no-repeat;
+    linear-gradient(
+      rgba(255,255,255,0.40),
+      rgba(255,255,255,0.45)
+    ),
+    url('/assets/north-vancouver-mountains.jpg')
+    center center / cover no-repeat;
+
   z-index: 0;
 }
-
 .heroFlag {
   position: absolute;
   top: 0;
@@ -101,11 +106,22 @@ nav a {
   right: 0;
   height: 135px;
   background: url('/assets/bc-flag-banner.png') center center / cover no-repeat;
-  opacity: 0.22;
+  opacity: 0.75;
   z-index: 1;
   border-bottom: 3px solid var(--gold);
 }
+.heroFlag::after {
+  content: "";
 
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.15),
+      rgba(255,255,255,0.15)
+    );
+}
 .hero > * {
   position: relative;
   z-index: 2;
