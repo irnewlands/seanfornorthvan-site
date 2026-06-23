@@ -41,7 +41,7 @@ function Intro(){return <section className="section intro split">
 </section>}
 
 function About(){return <section id="about" className="section aboutGrid">
-  <div className="aboutImage"><img src="/assets/About Sean.svg" alt="About Sean campaign artwork"/></div>
+  <div className="aboutImage"><img src="/assets/about-sean-community.jpg" alt="About Sean campaign artwork"/></div>
   <div>
     <p className="eyebrow">About Sean</p>
     <h2>A neighbour first. A candidate second.</h2>
