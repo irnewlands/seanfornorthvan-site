@@ -366,9 +366,12 @@ function Contact() {
   return (
     <footer id="contact">
       <img className="footerSignature"
-  src="/assets/SEAN ALEXANDER (2).svg"
+  src="/assets/SEAN-ALEXANDER.svg"
   alt="Sean Alexander for North Vancouver City Council"
         />
+      <p className="footerTagline">
+  Working Together For A Stronger North Vancouver
+</p>
       <p>Candidate for North Vancouver City Council</p>
       <p>
         <Mail size={16} /> sda.cnv.2026@gmail.com &nbsp; | &nbsp; seanfornorthvan.ca
