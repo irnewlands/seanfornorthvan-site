@@ -497,10 +497,13 @@ footer {
 }
 
 .footerSignature {
-  width: min(420px, 80vw);
+  width: min(500px, 90vw);
   height: auto;
-  margin-bottom: 8px;
-  filter: brightness(1.2);
+  display: block;
+  margin: 0 auto 12px auto;
+
+  filter: none;
+  background: transparent;
 }
 
 .auth {
@@ -583,6 +586,15 @@ footer {
   .brandLogo img {
     height: 48px;
   }
+
+.footerTagline {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}  
 
   .heroCredit {
     position: relative;
