@@ -32,12 +32,10 @@ a {
   color: inherit;
 }
 
-/* HEADER */
-
 .header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   background: rgba(6, 36, 71, 0.96);
   color: white;
   display: flex;
@@ -74,35 +72,43 @@ nav a {
   color: white;
 }
 
-/* HERO */
-
 .hero {
-  min-height: 820px;
+  min-height: 900px;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 44px;
   align-items: center;
-  padding: 220px 6vw 76px 6vw;
-  background: linear-gradient(90deg, #eef5fb 0%, #eef5fb 44%, #d9e8f2 100%);
+  padding: 190px 6vw 90px 6vw;
   position: relative;
   overflow: hidden;
+  background: #eef5fb;
 }
 
 .hero::before {
   content: "";
   position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.9)),
+    url('/assets/north-vancouver-mountains.jpg') center center / cover no-repeat;
+  z-index: 0;
+}
+
+.heroFlag {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 220px;
-  background:
-    url('/assets/provincial-flag-banner.svg') center top / cover no-repeat;
-  opacity: 0.25;
-  z-index: 0;
+  height: 135px;
+  background: url('/assets/bc-flag-banner.png') center center / cover no-repeat;
+  opacity: 0.22;
+  z-index: 1;
+  border-bottom: 3px solid var(--gold);
 }
 
 .hero > * {
   position: relative;
+  z-index: 2;
 }
 
 .heroLogo {
@@ -154,7 +160,19 @@ nav a {
   object-position: center;
 }
 
-/* BUTTONS */
+.heroCredit {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  font-size: 12px;
+  color: #5f6f7f;
+  z-index: 3;
+}
+
+.heroCredit a {
+  color: var(--blue);
+  text-decoration: underline;
+}
 
 .actions {
   display: flex;
@@ -185,8 +203,6 @@ nav a {
   border-color: white;
   color: white;
 }
-
-/* GENERAL SECTIONS */
 
 .section {
   padding: 76px 6vw;
@@ -227,8 +243,6 @@ p {
   background: var(--cream);
 }
 
-/* INTRO */
-
 .intro {
   background: white;
 }
@@ -247,8 +261,6 @@ p {
   color: var(--gold);
   margin: 0 0 10px;
 }
-
-/* ABOUT */
 
 .aboutGrid {
   display: grid;
@@ -295,8 +307,6 @@ p {
   font-size: 0.92rem;
 }
 
-/* GRIDS */
-
 .grid {
   display: grid;
   gap: 20px;
@@ -337,8 +347,6 @@ p {
   font-size: 1.35rem;
   margin-bottom: 0.2em;
 }
-
-/* YOUR VOICE */
 
 .voice {
   background: white;
@@ -390,8 +398,6 @@ p {
   height: 150px;
 }
 
-/* EVENTS */
-
 .event {
   display: grid;
   grid-template-columns: 1fr 0.52fr;
@@ -409,8 +415,6 @@ p {
   border-radius: 18px;
   box-shadow: 0 12px 35px #0005;
 }
-
-/* VOLUNTEER */
 
 .dark {
   background: var(--navy);
@@ -433,8 +437,6 @@ p {
   font-size: 1.5rem;
 }
 
-/* DONATE */
-
 .donate {
   background: linear-gradient(90deg, #f8faf5, white);
 }
@@ -452,11 +454,6 @@ p {
   font-size: 1.8rem;
 }
 
-.note {
-  font-size: 0.98rem;
-  color: #465669;
-}
-
 .donateBox small {
   display: block;
   margin-top: 16px;
@@ -464,13 +461,9 @@ p {
   line-height: 1.5;
 }
 
-/* MEDIA */
-
 .media {
   background: var(--cream);
 }
-
-/* FOOTER */
 
 footer {
   background: #03182f;
@@ -487,17 +480,10 @@ footer {
   filter: brightness(1.2);
 }
 
-footer h2 {
-  color: white;
-  margin: 0;
-}
-
 .auth {
   font-size: 0.88rem;
   color: #c9d7e7;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 1050px) {
   nav {
@@ -549,11 +535,16 @@ footer h2 {
 
   .hero {
     min-height: auto;
-    padding-top: 45px;
+    padding: 170px 6vw 70px 6vw;
   }
 
   .hero h1 {
     font-size: 4rem;
+  }
+
+  .heroFlag {
+    height: 115px;
+    opacity: 0.2;
   }
 
   .heroPhoto {
@@ -566,11 +557,15 @@ footer h2 {
     object-position: center;
   }
 
-  .aboutImage {
-    max-height: none;
-  }
-
   .brandLogo img {
     height: 48px;
+  }
+
+  .heroCredit {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 18px;
+    font-size: 11px;
   }
 }
