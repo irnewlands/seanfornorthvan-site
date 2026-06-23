@@ -108,7 +108,7 @@ nav a {
   height: 150px;
 
   background-image: url('/assets/bc-flag-banner.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
 
