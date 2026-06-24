@@ -389,11 +389,83 @@ function Media() {
           <p>Campaign announcements, statements, and media notices can be published here.</p>
         </div>
 
-        <div className="issue">
-          <UserRound />
-          <h3>Photos & Bio</h3>
-          <p>Approved candidate photos, short bio, and campaign background for journalists and volunteers.</p>
-        </div>
+       <div className="issue">
+  <UserRound />
+
+  <h3>Photos & Bio</h3>
+
+  <p>
+    Approved candidate photos, biography, media kit, and campaign
+    background for journalists, residents, and volunteers.
+  </p>
+
+  <div className="downloadButtons">
+
+    <a
+      className="btn primary"
+      href="/assets/sean-alexander-media-handout.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Media Handout
+    </a>
+
+    <a
+      className="btn"
+      href="/assets/sean-alexander-campaign-bio.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Campaign Biography
+    </a>
+
+    <a
+      className="btn"
+      href="/assets/sean-official-portrait-waterfront.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Official Portrait
+    </a>
+
+    <a
+      className="btn"
+      href="/assets/sean-professional-portrait-clipboard.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Professional Portrait
+    </a>
+
+    <a
+      className="btn"
+      href="/assets/sean-city-hall.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      City Hall Photo
+    </a>
+
+    <a
+      className="btn"
+      href="/assets/sean-community-waterfront.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Community Waterfront Photo
+    </a>
+
+    <a
+      className="btn"
+      href="/assets/sean-labour-support.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Community Support Photo
+    </a>
+
+  </div>
+</div>
 
 <div className="issue downloadCard">
   <ExternalLink />
