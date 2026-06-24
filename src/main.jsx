@@ -243,22 +243,62 @@ function Voice() {
         </ul>
       </div>
 
-      <form className="form">
-        <input placeholder="Name" />
-        <input placeholder="Email" />
-        <input placeholder="Postal code" />
-        <select>
-          <option>What issue matters most?</option>
-          <option>Traffic & Mobility</option>
-          <option>Public Safety</option>
-          <option>Cost Fairness</option>
-          <option>Community Livability</option>
-          <option>Transparency & Accountability</option>
-          <option>Other</option>
-        </select>
-        <textarea placeholder="Share your concern or idea" />
-        <button className="btn primary" type="button">Submit Concern</button>
-      </form>
+    <form
+  className="form"
+  action="https://seanfornorthvan.us8.list-manage.com/subscribe/post?u=587e49d15286ad474e259a7f5&id=bda6bce462&f_id=008569e1f0"
+  method="post"
+  target="_blank"
+>
+<input
+  type="text"
+  name="FULLNAME"
+  placeholder="Full Name"
+  required
+/>
+
+<input
+  type="email"
+  name="EMAIL"
+  placeholder="Email Address"
+  required
+/>
+
+<input
+  type="text"
+  name="POSTCODE"
+  placeholder="Postal Code"
+  required
+/>
+
+<select
+  name="MMERGE6"
+  required
+>
+  <option value="">Select an Issue</option>
+  <option value="Traffic & Mobility">Traffic & Mobility</option>
+  <option value="Public Safety">Public Safety</option>
+  <option value="Cost Fairness">Cost Fairness</option>
+  <option value="Community Livability">Community Livability</option>
+  <option value="Transparency & Accountability">
+    Transparency & Accountability
+  </option>
+  <option value="Other">Other</option>
+</select>
+
+<textarea
+  name="ISSUETEXT"
+  placeholder="Share your concern or idea"
+  required
+/>
+
+  <p className="formDisclaimer">
+    You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
+  </p>
+
+ <button type="submit" className="btn primary">
+  Share Your Voice
+</button>
+</form>
     </section>
   );
 }
