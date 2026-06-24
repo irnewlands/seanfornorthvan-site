@@ -318,7 +318,50 @@ function Donate() {
           Every contribution helps Sean connect with more residents, host community conversations, print campaign
           materials, and build a stronger North Vancouver.
         </p>
+<div className="grassrootsPitch">
+  <h3>Pitch In to Power Sean for North Van!</h3>
 
+  <p>
+    I'm running a <strong>100% grassroots campaign for City Council</strong>—
+    powered by residents, neighbours, and community supporters, not large
+    corporate interests.
+  </p>
+
+  <p>
+    To win, I don't need a handful of giant donations. I need hundreds of
+    North Vancouver residents to chip in what they can and help build a
+    campaign that listens first and puts people back at the centre of City Hall.
+  </p>
+
+  <h4>Pick the option that works for you:</h4>
+
+  <ul>
+    <li>
+      ☕ <strong>$10 – The "Two Cups of Coffee" Donation</strong><br />
+      Less than your morning brew, but enough to help print flyers and knock on
+      20 more doors.
+    </li>
+
+    <li>
+      🚀 <strong>$30 – The "Three-Pack" Power Boost</strong> (Most Popular)<br />
+      Helps fund digital outreach to put Sean's message in front of 100 more
+      North Vancouver residents.
+    </li>
+
+    <li>
+      💥 <strong>Choose Your Own Amount</strong><br />
+      Whether it's $50, $100, $250, or any amount you're comfortable with,
+      every contribution helps power a stronger grassroots campaign.
+    </li>
+  </ul>
+
+  <p>
+    <strong>
+      Every dollar stays local. Every dollar helps us reach more residents.
+      Every dollar helps build a more connected North Vancouver.
+    </strong>
+  </p>
+</div>
         <a
           className="btn primary"
           href="https://donorbox.org/seanfornorthvan?amount=30"
