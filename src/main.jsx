@@ -320,7 +320,12 @@ function Events() {
           <li><Users /> Bring your questions, concerns, and ideas</li>
         </ul>
 
-        <a className="btn white" href="#contact">Invite Sean to an event</a>
+      <a
+  className="btn white"
+  href="mailto:sda.cnv.2026@gmail.com?subject=Invite%20Sean%20to%20an%20Event&body=Event%20Name:%0D%0AEvent%20Date:%0D%0ALocation:%0D%0AExpected%20Attendance:%0D%0AAdditional%20Details:"
+>
+  Invite Sean to an event
+</a>
       </div>
 
       <img src="/assets/event-instagram.png" alt="Sean Alexander campaign event poster" />
