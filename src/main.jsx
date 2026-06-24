@@ -429,9 +429,12 @@ function Media() {
     >
       Download QR Code
     </a>
-  </div>
+   </div>
 </div>
-    </section>
+
+</div>
+
+</section>
   );
 }
 
