@@ -224,14 +224,20 @@ nav a {
 }
 
 .btn {
-  padding: 14px 22px;
+  padding: 28px 44px;
   border-radius: 999px;
   border: 2px solid var(--navy);
+
   font-weight: 900;
+  font-size: 1.5rem;
+
   color: var(--navy);
+
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+
+  gap: 12px;
 }
 
 .btn.primary {
