@@ -310,6 +310,38 @@ function Volunteer() {
             Share campaign content, invite neighbours to events, host a coffee meeting, or help Sean reach more residents.
           </p>
         </div>
+        <form
+  className="form volunteerForm"
+  action="http://eepurl.com/gtYHSnvG-1"
+  method="post"
+  target="_blank"
+>
+  <input name="FNAME" placeholder="First Name" required />
+  <input name="LNAME" placeholder="Last Name" required />
+  <input name="EMAIL" type="email" placeholder="Email Address" required />
+  <input name="PHONE" type="tel" placeholder="Cell Number" />
+
+  <label className="checkOption">
+    <input type="checkbox" name="CANVASS" value="Yes" />
+    I want to canvass door-to-door
+  </label>
+
+  <label className="checkOption">
+    <input type="checkbox" name="MAILINGLIST" value="Yes" />
+    I want to join the mailing list
+  </label>
+
+  <label className="checkOption">
+    <input type="checkbox" name="VOLUNTEER" value="Yes" />
+    I want to volunteer for the campaign team
+  </label>
+
+  <p className="formDisclaimer">
+    You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
+  </p>
+
+  <button className="btn primary" type="submit">Get Involved</button>
+</form>
       </div>
     </section>
   );
