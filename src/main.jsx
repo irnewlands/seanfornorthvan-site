@@ -34,9 +34,10 @@ function Header() {
 
   return (
     <header className="header">
-      <a className="brandLogo" href="#home">
-        <img src="/assets/sean-cnv-logo.svg" alt="Sean for North Vancouver City Council" />
-      </a>
+      <a className="brandLogo headerBrandGroup" href="#home">
+  <img className="headerMark" src="/assets/sean-cnv-logo.svg" alt="Sean for North Vancouver City Council" />
+  <img className="headerSignature" src="/assets/sean-header-signature.svg" alt="Sean Alexander" />
+</a>
 
       <button className="menu" aria-label="Open menu" onClick={() => setOpen(!open)}>
         {open ? <X /> : <Menu />}
