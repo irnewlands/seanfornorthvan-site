@@ -18,6 +18,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -25,6 +27,8 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--text);
   background: white;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 a {
@@ -43,6 +47,7 @@ a {
   justify-content: space-between;
   padding: 14px 5vw;
   box-shadow: 0 3px 18px #0003;
+  width: 100%;
 }
 
 .brandLogo img {
@@ -53,6 +58,7 @@ a {
   display: flex;
   align-items: center;
   gap: 22px;
+  min-width: 0;
 }
 
 .headerMark {
@@ -99,13 +105,13 @@ nav a {
   position: relative;
   overflow: hidden;
   background: #eef5fb;
+  width: 100%;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-
   background:
     linear-gradient(
       rgba(255,255,255,0.40),
@@ -113,9 +119,9 @@ nav a {
     ),
     url('/assets/north-vancouver-mountains.jpg')
     center center / cover no-repeat;
-
   z-index: 0;
 }
+
 .heroFlag {
   position: absolute;
   top: 0;
@@ -141,6 +147,7 @@ nav a {
   inset: 0;
   background: rgba(255,255,255,0.35);
 }
+
 .hero > *:not(.heroFlag) {
   position: relative;
   z-index: 2;
@@ -512,12 +519,19 @@ footer {
   width: 100%;
   max-width: 1200px;
   height: auto;
-
   display: block;
   margin: 0 auto 12px auto;
-
   filter: none;
   background: transparent;
+}
+
+.footerTagline {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 6px;
 }
 
 .auth {
@@ -538,12 +552,46 @@ footer {
 }
 
 @media (max-width: 850px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 4vw;
+  }
+
+  .headerBrandGroup {
+    max-width: calc(100vw - 82px);
+    overflow: hidden;
+    gap: 10px;
+  }
+
+  .headerMark {
+    height: 42px;
+    max-height: 42px;
+    flex-shrink: 0;
+  }
+
+  .headerSignature {
+    max-width: 165px;
+    height: auto;
+    flex-shrink: 1;
+  }
+
+  .brandLogo img {
+    max-height: 48px;
+    width: auto;
+  }
+
   nav {
     display: none;
     position: absolute;
-    top: 82px;
+    top: 72px;
     left: 0;
     right: 0;
+    width: 100%;
     background: var(--navy);
     padding: 25px;
     flex-direction: column;
@@ -556,6 +604,7 @@ footer {
 
   .menu {
     display: block;
+    flex-shrink: 0;
   }
 
   .hero,
@@ -576,6 +625,8 @@ footer {
   .hero {
     min-height: auto;
     padding: 170px 6vw 70px 6vw;
+    width: 100%;
+    overflow: hidden;
   }
 
   .hero h1 {
@@ -583,14 +634,14 @@ footer {
   }
 
   .heroFlag {
-  height: 130px;
-  opacity: 0.4;
-}
+    height: 130px;
+    opacity: 0.4;
+  }
 
-.heroFlag::after {
-  background: rgba(255,255,255,0.35);
-}
-  
+  .heroFlag::after {
+    background: rgba(255,255,255,0.35);
+  }
+
   .heroPhoto {
     max-height: none;
   }
@@ -601,24 +652,35 @@ footer {
     object-position: center;
   }
 
-  .brandLogo img {
-    height: 48px;
-  }
-
-.footerTagline {
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-weight: 700;
-  font-size: 0.85rem;
-  margin-top: 6px;
-}  
-
   .heroCredit {
     position: relative;
     right: auto;
     bottom: auto;
     margin-top: 18px;
     font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerSignature {
+    max-width: 130px;
+  }
+
+  .headerMark {
+    height: 38px;
+    max-height: 38px;
+  }
+
+  .hero h1 {
+    font-size: 3.4rem;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
