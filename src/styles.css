@@ -46,10 +46,27 @@ a {
 }
 
 .brandLogo img {
+  display: block;
+}
+
+.headerBrandGroup {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.headerMark {
   height: 54px;
   width: auto;
   display: block;
   filter: drop-shadow(0 3px 8px #0005);
+}
+
+.headerSignature {
+  height: 58px;
+  width: auto;
+  display: block;
+  filter: none;
 }
 
 nav {
