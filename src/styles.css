@@ -712,4 +712,28 @@ footer {
   .headerSignature {
     max-width: 600px;
   }
+
+  .donation-options {
+  margin-top: 24px;
+}
+
+.donation-options h4 {
+  color: var(--gold);
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.donation-tier {
+  margin-top: 14px;
+  padding: 14px;
+  border-left: 4px solid var(--green);
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.donation-tier em {
+  color: var(--gold);
+  font-style: normal;
+  font-weight: 700;
 }
