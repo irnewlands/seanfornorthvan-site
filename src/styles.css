@@ -129,22 +129,17 @@ nav a {
   background-position: center center;
   background-repeat: no-repeat;
 
-  opacity: 1;
+  opacity: 0.4;
   z-index: 1;
 
   border-bottom: 4px solid var(--gold);
 }
+
 .heroFlag::after {
   content: "";
-
   position: absolute;
   inset: 0;
-
-  background:
-    linear-gradient(
-      rgba(255,255,255,0.15),
-      rgba(255,255,255,0.15)
-    );
+  background: rgba(255,255,255,0.35);
 }
 .hero > *:not(.heroFlag) {
   position: relative;
