@@ -19,10 +19,7 @@ import {
   ArrowRight,
   UserRound,
   Newspaper,
-  ExternalLink,
-Facebook,
-Instagram,
-Linkedin
+  ExternalLink
 } from 'lucide-react';
 import './styles.css';
 
