@@ -22,7 +22,7 @@ import {
   ExternalLink
   Facebook,
   Instagram,
-  Linkedin,
+  Linkedin
 } from 'lucide-react';
 import './styles.css';
 
