@@ -751,4 +751,24 @@ footer {
   max-width: 1300px;
   margin: 0 auto;
 }  
+.downloadCard {
+  text-align: center;
+}
+
+.downloadQR {
+  width: 180px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+}
+
+.downloadButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}  
 }
