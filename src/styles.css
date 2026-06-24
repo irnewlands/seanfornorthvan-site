@@ -587,7 +587,7 @@ footer {
 
   .heroFlag {
   height: 130px;
-  opacity: 1;
+  opacity: 0.35;
 }
 
   .heroPhoto {
