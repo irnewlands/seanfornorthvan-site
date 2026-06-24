@@ -386,7 +386,7 @@ function Media() {
         <div className="issue">
           <Newspaper />
           <h3>Press & Updates</h3>
-          <p>Campaign announcements, statements, and media notices can be published here.</p>
+          <p>Campaign statements and media releases will be published here.</p>
         </div>
 
        <div className="issue">
