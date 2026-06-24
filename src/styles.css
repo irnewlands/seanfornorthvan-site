@@ -509,8 +509,10 @@ footer {
 }
 
 .footerSignature {
-  width: min(500px, 90vw);
+  width: 100%;
+  max-width: 1200px;
   height: auto;
+
   display: block;
   margin: 0 auto 12px auto;
 
