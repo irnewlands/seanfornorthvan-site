@@ -771,4 +771,34 @@ footer {
   gap: 10px;
   margin-top: 1rem;
 }  
+  /* SOCIAL ICONS */
+
+.heroSocials,
+.footerSocials {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.heroSocials a,
+.footerSocials a {
+  color: var(--navy);
+  transition: transform 0.2s ease;
+}
+
+.footerSocials a {
+  color: white;
+}
+
+.heroSocials a:hover,
+.footerSocials a:hover {
+  transform: translateY(-2px);
+}
+
+.heroSocials svg,
+.footerSocials svg {
+  width: 28px;
+  height: 28px;
+}
 }
