@@ -22,8 +22,7 @@ import {
   ExternalLink,
   Facebook,
   Instagram,
-  Linkedin,
-  Mail
+  Linkedin
 } from 'lucide-react';
 import './styles.css';
 
