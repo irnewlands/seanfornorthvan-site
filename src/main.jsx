@@ -395,12 +395,42 @@ function Media() {
           <p>Approved candidate photos, short bio, and campaign background for journalists and volunteers.</p>
         </div>
 
-        <div className="issue">
-          <ExternalLink />
-          <h3>Downloads</h3>
-          <p>Rack cards, social graphics, posters, and volunteer materials can be stored here.</p>
-        </div>
-      </div>
+<div className="issue downloadCard">
+  <ExternalLink />
+
+  <h3>Campaign Materials</h3>
+
+  <p>
+    Download Sean's campaign rack card, share it with neighbours,
+    or scan the QR code to visit the campaign website.
+  </p>
+
+  <img
+    src="/assets/sean-website-qr.png"
+    alt="Sean Alexander Campaign QR Code"
+    className="downloadQR"
+  />
+
+  <div className="downloadButtons">
+    <a
+      className="btn primary"
+      href="/assets/sean-rack-card.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Download Rack Card
+    </a>
+
+    <a
+      className="btn"
+      href="/assets/sean-website-qr.png"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Download QR Code
+    </a>
+  </div>
+</div>
     </section>
   );
 }
