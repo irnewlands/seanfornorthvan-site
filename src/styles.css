@@ -802,3 +802,41 @@ footer {
   height: 28px;
 }
 }
+.heroSocials,
+.footerSocials {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footerSocials {
+  justify-content: center;
+}
+
+.heroSocials a,
+.footerSocials a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.heroSocials a:hover,
+.footerSocials a:hover {
+  transform: translateY(-2px);
+}
+
+.heroSocials svg,
+.footerSocials svg {
+  width: 19px;
+  height: 19px;
+}
