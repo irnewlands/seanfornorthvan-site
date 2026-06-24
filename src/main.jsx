@@ -20,6 +20,10 @@ import {
   UserRound,
   Newspaper,
   ExternalLink
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail
 } from 'lucide-react';
 import './styles.css';
 
