@@ -104,7 +104,9 @@ function Hero() {
       </div>
 <div className="heroSocials">
   <a href="https://www.facebook.com/seanfornorthvan" target="_blank" rel="noopener noreferrer">f</a>
-  <a href="https://www.instagram.com/seanfornorthvan/" target="_blank" rel="noopener noreferrer">◎</a>
+ <a href="https://www.instagram.com/seanfornorthvan/" target="_blank" rel="noopener noreferrer">
+  <Instagram />
+</a>
   <a href="https://www.linkedin.com/in/sean-alexander-365bba413/" target="_blank" rel="noopener noreferrer">in</a>
   <a href="mailto:sda.cnv.2026@gmail.com"><Mail /></a>
 </div>
