@@ -587,14 +587,11 @@ footer {
 
   .heroFlag {
   height: 130px;
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
-  .heroFlag::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.25);
+.heroFlag::after {
+  background: rgba(255,255,255,0.35);
 }
   
   .heroPhoto {
