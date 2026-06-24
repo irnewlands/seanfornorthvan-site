@@ -59,7 +59,7 @@ a {
   height: 54px;
   width: auto;
   display: block;
-  filter: drop-shadow(0 3px 8px #0005);
+  filter: brightness(0) saturate(100%) invert(70%) sepia(46%) saturate(566%) hue-rotate(5deg) brightness(92%) contrast(88%);
 }
 
 .headerSignature {
