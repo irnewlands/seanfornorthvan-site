@@ -846,3 +846,28 @@ footer {
   width: 48px;
   height: 48px;
 }
+
+.volunteerForm {
+  max-width: 850px;
+  margin: 40px auto 0 auto;
+}
+
+.checkOption {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.checkOption input {
+  width: 22px;
+  height: 22px;
+  margin-top: 3px;
+}
+
+.formDisclaimer {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4f5f6f;
+}
