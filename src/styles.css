@@ -590,6 +590,13 @@ footer {
   opacity: 0.35;
 }
 
+  .heroFlag::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.25);
+}
+  
   .heroPhoto {
     max-height: none;
   }
