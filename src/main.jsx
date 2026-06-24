@@ -23,7 +23,6 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  Mail,
 } from 'lucide-react';
 import './styles.css';
 
