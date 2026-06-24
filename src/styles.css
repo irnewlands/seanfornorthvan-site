@@ -737,4 +737,18 @@ footer {
   font-style: normal;
   font-weight: 700;
 }
+.donateFull {
+  display: block;
+}
+
+.donateIntro {
+  max-width: 1100px;
+  margin: 0 auto 36px auto;
+}
+
+.donateBoxWide {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}  
 }
