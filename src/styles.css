@@ -817,8 +817,8 @@ footer {
 
 .heroSocials a,
 .footerSocials a {
-  width: 34px;
-  height: 34px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background: var(--green);
   color: white;
@@ -826,7 +826,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 42px;
   transition: transform 0.2s ease;
 }
 
@@ -837,6 +837,6 @@ footer {
 
 .heroSocials svg,
 .footerSocials svg {
-  width: 19px;
-  height: 19px;
+  width: 48px;
+  height: 48px;
 }
