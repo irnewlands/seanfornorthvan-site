@@ -858,6 +858,7 @@ footer {
   align-items: flex-start;
   font-weight: 800;
   line-height: 1.5;
+  color: #000000;
 }
 
 .checkOption input {
