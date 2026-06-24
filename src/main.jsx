@@ -310,39 +310,52 @@ function Volunteer() {
             Share campaign content, invite neighbours to events, host a coffee meeting, or help Sean reach more residents.
           </p>
         </div>
-        <form
-  className="form volunteerForm"
-  action="http://eepurl.com/gtYHSnvG-1"
-  method="post"
-  target="_blank"
->
-  <input name="FNAME" placeholder="First Name" required />
-  <input name="LNAME" placeholder="Last Name" required />
-  <input name="EMAIL" type="email" placeholder="Email Address" required />
-  <input name="PHONE" type="tel" placeholder="Cell Number" />
-
-  <label className="checkOption">
-    <input type="checkbox" name="CANVASS" value="Yes" />
-    I want to canvass door-to-door
-  </label>
-
-  <label className="checkOption">
-    <input type="checkbox" name="MAILINGLIST" value="Yes" />
-    I want to join the mailing list
-  </label>
-
-  <label className="checkOption">
-    <input type="checkbox" name="VOLUNTEER" value="Yes" />
-    I want to volunteer for the campaign team
-  </label>
-
-  <p className="formDisclaimer">
-    You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
-  </p>
-
-  <button className="btn primary" type="submit">Get Involved</button>
-</form>
       </div>
+
+      <form
+        className="form volunteerForm"
+        action="https://seanfornorthvan.us8.list-manage.com/subscribe/post?u=587e49d15286ad474e259a7f5&id=bda6bce462&f_id=008669e1f0"
+        method="post"
+        target="_blank"
+      >
+        <input type="text" name="FNAME" placeholder="First Name" required />
+        <input type="text" name="LNAME" placeholder="Last Name" required />
+        <input type="email" name="EMAIL" placeholder="Email Address" required />
+        <input type="tel" name="PHONE" placeholder="Cell Number" />
+
+        <label className="checkOption">
+          <input type="checkbox" name="group[302520][4]" value="1" />
+          Sean's Campaign Team - Volunteer
+        </label>
+
+        <label className="checkOption">
+          <input type="checkbox" name="group[302520][2]" value="1" />
+          Join Mailing List / Keep Updated
+        </label>
+
+        <label className="checkOption">
+          <input type="checkbox" name="group[302520][1]" value="1" />
+          Canvass Door to Door
+        </label>
+
+        <input
+          type="text"
+          name="b_587e49d15286ad474e259a7f5_bda6bce462"
+          tabIndex="-1"
+          value=""
+          readOnly
+          style={{ position: 'absolute', left: '-5000px' }}
+          aria-hidden="true"
+        />
+
+        <p className="formDisclaimer">
+          You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
+        </p>
+
+        <button className="btn primary" type="submit">
+          Sign Up
+        </button>
+      </form>
     </section>
   );
 }
