@@ -232,14 +232,13 @@ function Voice() {
         <p className="eyebrow">Your Voice Portal</p>
         <h2>What would make North Vancouver better?</h2>
         <p>
-          Share the concern, idea, or neighbourhood issue you want Sean to hear. This section can connect later to
-          Google Forms, MailerLite, Airtable, or a custom campaign database.
+          Share the concern, idea, or neighbourhood issue you want Sean to hear, make it part of his Platform!
         </p>
 
         <ul className="checks green">
           <li><MessageSquare /> Traffic, public safety, livability, housing, and other local concerns</li>
           <li><Users /> Built for listening sessions, canvassing follow-up, and community input</li>
-          <li><Mail /> Helps turn resident feedback into campaign priorities</li>
+          <li><Mail /> Helps turn resident feedback into Sean's campaign priorities</li>
         </ul>
       </div>
 
