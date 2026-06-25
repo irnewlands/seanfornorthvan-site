@@ -883,3 +883,12 @@ footer {
   font-weight: 700;
   text-align: center;
 }
+
+.donation-options li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.donation-options li:last-child {
+    margin-bottom: 0;
+}
