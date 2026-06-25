@@ -443,7 +443,7 @@ function Donate() {
 
           <h4>Pick the option that works for you:</h4>
 
-          <ul>
+          <ul className="donation-options">
             <li>
               ☕ <strong>$10 – The "Two Cups of Coffee" Donation</strong><br />
               Less than your morning brew, but enough to help print flyers and knock on 20 more doors.
