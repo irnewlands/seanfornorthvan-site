@@ -367,14 +367,14 @@ function Volunteer() {
         <input type="email" name="EMAIL" placeholder="Email Address" required />
         <input type="tel" name="PHONE" placeholder="Cell Number" />
 
+                <label className="checkOption">
+          <input type="checkbox" name="group[302520][2]" value="1" />
+          Join Mailing List / Keep Updated
+        </label>
+        
         <label className="checkOption">
           <input type="checkbox" name="group[302520][4]" value="1" />
           Sean's Campaign Team - Volunteer
-        </label>
-
-        <label className="checkOption">
-          <input type="checkbox" name="group[302520][2]" value="1" />
-          Join Mailing List / Keep Updated
         </label>
 
         <label className="checkOption">
@@ -382,6 +382,11 @@ function Volunteer() {
           Canvass Door to Door
         </label>
 
+        <label className="checkOption">
+  <input type="checkbox" name="group[302520][16]" value="1" />
+  Take a Lawn Sign
+</label>
+        
         <input
           type="text"
           name="b_587e49d15286ad474e259a7f5_bda6bce462"
