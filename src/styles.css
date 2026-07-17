@@ -992,3 +992,16 @@ footer {
     width: 100%;
   }
 }
+/* Event Poster Button */
+
+.featured-event-card .btn.secondary {
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  background: transparent;
+}
+
+.featured-event-card .btn.secondary:hover {
+  background: rgba(255,255,255,0.12);
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
