@@ -1033,3 +1033,64 @@ footer {
     word-break: normal;
   }
 }
+/* Campaign resource document buttons */
+
+.media-document-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.media-document-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 16px 18px;
+  border: 2px solid var(--green);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--navy);
+  font-weight: 800;
+  line-height: 1.35;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.media-document-link span {
+  min-width: 0;
+}
+
+.media-document-link small {
+  flex-shrink: 0;
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.media-document-link:hover {
+  background: var(--green);
+  border-color: var(--green);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.media-document-link:hover small {
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .media-document-link {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .media-document-link small {
+    margin-top: 4px;
+  }
+}
