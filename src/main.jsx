@@ -327,7 +327,7 @@ function Events() {
 </a>
       </div>
 
-      <img src="/assets/event-instagram.png" alt="Sean Alexander campaign event poster" />
+      <img src="/assets/community-conversation-july-18-2026.png" />
     </section>
   );
 }
