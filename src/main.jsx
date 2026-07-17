@@ -556,7 +556,7 @@ function Media() {
   <div className="media-document-list">
     <a
       className="media-document-link"
-      href="/assets/Sean_Alexander_Campaign_Platform-v5.pdf"
+      href="/assets/Platform & Core Pillars.pdf"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -566,7 +566,7 @@ function Media() {
 
     <a
       className="media-document-link"
-      href="/assets/letter-to-the-editor-metro-sewage-plant-inquiry-motion.pdf"
+      href="/assets/motion-metro-sewage-plant-inquiry.pdf"
       target="_blank"
       rel="noopener noreferrer"
     >
