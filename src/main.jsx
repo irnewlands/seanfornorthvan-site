@@ -544,11 +544,42 @@ function Media() {
       <h2 className="center">A professional campaign hub for residents, volunteers, and media.</h2>
 
       <div className="grid three">
-        <div className="issue">
-          <Newspaper />
-          <h3>Press & Updates</h3>
-          <p>Campaign statements and media releases will be published here.</p>
-        </div>
+       <div className="issue">
+  <Newspaper />
+
+  <h3>Campaign Resources</h3>
+
+  <p>
+    Read Sean’s platform, campaign statements, and public commentary.
+  </p>
+
+  <div className="media-document-list">
+    <a
+      className="media-document-link"
+      href="/assets/Sean_Alexander_Campaign_Platform-v5.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span>Platform &amp; Core Pillars</span>
+      <small>Open PDF</small>
+    </a>
+
+    <a
+      className="media-document-link"
+      href="/assets/letter-to-the-editor-metro-sewage-plant-inquiry-motion.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span>
+        Letter to the Editor:
+        <br />
+        Metro Sewage Plant Inquiry Motion
+      </span>
+
+      <small>Open PDF</small>
+    </a>
+  </div>
+</div>
 
        <div className="issue">
   <UserRound />
