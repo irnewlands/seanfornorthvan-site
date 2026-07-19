@@ -1164,3 +1164,26 @@ footer {
     font-size: 1.15rem;
   }
 }
+.footerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.footerDivider {
+  opacity: 0.5;
+}
+
+@media (max-width: 650px) {
+  .footerContact {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footerDivider {
+    display: none;
+  }
+}
