@@ -762,9 +762,20 @@ function Contact() {
   Working Together For A Stronger North Vancouver
 </p>
       <p>Candidate for North Vancouver City Council</p>
-      <p>
-        <Mail size={16} /> sda.cnv.2026@gmail.com &nbsp; | &nbsp; seanfornorthvan.ca
-      </p>
+     <p className="footerContact">
+  <Mail size={16} />
+  <span>sda.cnv.2026@gmail.com</span>
+
+  <span className="footerDivider">|</span>
+
+  📞
+  <span>236-889-3500</span>
+
+  <span className="footerDivider">|</span>
+
+  🌐
+  <span>seanfornorthvan.ca</span>
+</p>
 <div className="footerSocials">
   <a href="https://www.facebook.com/seanfornorthvan" target="_blank" rel="noopener noreferrer">f</a>
 <a
