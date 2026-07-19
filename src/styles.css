@@ -1187,3 +1187,236 @@ footer {
     display: none;
   }
 }
+/* Modern media and campaign resource section */
+
+.mediaIntro {
+  margin-bottom: 0;
+}
+
+.campaignResourceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 24px;
+  max-width: 1500px;
+  margin: 42px auto 0;
+}
+
+.campaignResourceCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--green);
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(7, 24, 50, 0.09);
+}
+
+.campaignResourceHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.campaignResourceIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: rgba(85, 127, 42, 0.11);
+}
+
+.campaignResourceIcon svg {
+  width: 30px;
+  height: 30px;
+  color: var(--green);
+}
+
+.campaignResourceLabel {
+  margin: 0 0 3px;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.campaignResourceHeader h3 {
+  margin: 0;
+  color: var(--navy);
+  font-family: Montserrat, Inter, Arial, sans-serif;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.campaignResourceDescription {
+  min-height: 82px;
+  margin: 0 0 24px;
+  color: #405065;
+  line-height: 1.65;
+}
+
+.campaignResourceLinks {
+  display: grid;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.campaignResourceLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+  min-height: 68px;
+  padding: 14px 16px;
+  border: 2px solid var(--navy);
+  border-radius: 18px;
+  background: #ffffff;
+  color: var(--navy);
+  font-weight: 800;
+  line-height: 1.3;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.campaignResourceLink span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.campaignResourceLink small {
+  flex: 0 0 auto;
+  color: var(--green);
+  font-size: 0.76rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.campaignResourceLink:hover {
+  transform: translateY(-2px);
+  border-color: var(--green);
+  background: var(--cream);
+  box-shadow: 0 8px 18px rgba(7, 24, 50, 0.1);
+}
+
+.campaignResourceLink.primaryResource {
+  border-color: var(--green);
+  background: var(--green);
+  color: #ffffff;
+}
+
+.campaignResourceLink.primaryResource small {
+  color: #ffffff;
+}
+
+.campaignResourceLink.primaryResource:hover {
+  border-color: var(--green2);
+  background: var(--green2);
+}
+
+.campaignQRWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 2px 0 26px;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--cream);
+}
+
+.campaignResourceQR {
+  display: block;
+  width: 130px;
+  height: 130px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #ffffff;
+  object-fit: contain;
+}
+
+.campaignQRWrap p {
+  margin: 0;
+  color: var(--navy);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .campaignResourceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .campaignMaterialsCard {
+    grid-column: 1 / -1;
+  }
+
+  .campaignMaterialsCard .campaignResourceLinks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .campaignResourceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .campaignMaterialsCard {
+    grid-column: auto;
+  }
+
+  .campaignResourceCard {
+    padding: 24px;
+  }
+
+  .campaignResourceDescription {
+    min-height: 0;
+  }
+
+  .campaignMaterialsCard .campaignResourceLinks {
+    grid-template-columns: 1fr;
+  }
+
+  .campaignQRWrap {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .campaignResourceHeader {
+    align-items: flex-start;
+  }
+
+  .campaignResourceIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .campaignResourceHeader h3 {
+    font-size: 1.25rem;
+  }
+
+  .campaignResourceLink {
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .campaignResourceLink small {
+    white-space: normal;
+  }
+}
