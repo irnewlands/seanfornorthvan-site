@@ -24,7 +24,8 @@ import {
 import './styles.css';
 
 const nav = ['Home', 'About', 'What Matters', 'Your Voice', 'Events', 'Volunteer', 'Donate', 'Contact'];
-
+const featuredVideoUrl =
+  'https://www.facebook.com/reel/1017533700987667';
 function anchor(name) {
   return '#' + name.toLowerCase().replaceAll(' ', '-');
 }
@@ -122,6 +123,54 @@ function Hero() {
   <a href="https://www.linkedin.com/in/sean-alexander-365bba413/" target="_blank" rel="noopener noreferrer">in</a>
   <a href="mailto:sda.cnv.2026@gmail.com"><Mail /></a>
 </div>
+    </section>
+  );
+}
+
+function FeaturedVideo() {
+  const facebookEmbedUrl =
+    `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
+      featuredVideoUrl
+    )}&show_text=false&width=500`;
+
+  return (
+    <section className="section featuredVideo">
+      <div className="featuredVideoIntro">
+        <p className="eyebrow center">Featured Campaign Video</p>
+
+        <h2 className="center">Hear Directly From Sean</h2>
+
+        <p className="center narrow">
+          Watch Sean discuss his campaign and his vision for a stronger,
+          more connected North Vancouver.
+        </p>
+      </div>
+
+      <div className="featuredVideoPlayer">
+        <iframe
+          src={facebookEmbedUrl}
+          title="Featured campaign video from Sean Alexander"
+          width="500"
+          height="889"
+          scrolling="no"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+
+      <div className="featuredVideoActions">
+        <a
+          className="btn primary"
+          href={featuredVideoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch on Facebook
+          <ExternalLink />
+        </a>
+      </div>
     </section>
   );
 }
@@ -746,6 +795,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <FeaturedVideo />
       <Intro />
       <About />
       <WhatMatters />
