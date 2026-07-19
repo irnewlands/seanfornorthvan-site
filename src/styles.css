@@ -1094,3 +1094,73 @@ footer {
     margin-top: 4px;
   }
 }
+/* Featured campaign video */
+
+.featuredVideo {
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--cream) 100%
+    );
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.featuredVideoIntro {
+  max-width: 920px;
+  margin: 0 auto 34px;
+}
+
+.featuredVideoIntro p {
+  margin-bottom: 0;
+}
+
+.featuredVideoPlayer {
+  width: min(100%, 430px);
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 8px solid #ffffff;
+  border-radius: 26px;
+  background: var(--navy);
+  box-shadow: 0 20px 50px rgba(7, 24, 50, 0.22);
+}
+
+.featuredVideoPlayer iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.featuredVideoActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.featuredVideoActions .btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 600px) {
+  .featuredVideo {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .featuredVideoPlayer {
+    width: min(100%, 390px);
+    border-width: 5px;
+    border-radius: 20px;
+  }
+
+  .featuredVideoActions .btn {
+    width: 100%;
+    max-width: 390px;
+    padding: 20px 24px;
+    font-size: 1.15rem;
+  }
+}
