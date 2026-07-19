@@ -589,165 +589,210 @@ function Donate() {
 function Media() {
   return (
     <section className="section media">
-      <p className="eyebrow center">Media & Campaign Materials</p>
-      <h2 className="center">A professional campaign hub for residents, volunteers, and media.</h2>
+      <p className="eyebrow center">Media &amp; Campaign Materials</p>
 
-      <div className="grid three">
-       <div className="issue">
-  <Newspaper />
+      <h2 className="center">
+        Campaign resources for residents, volunteers, and media.
+      </h2>
 
-  <h3>Campaign Resources</h3>
+      <p className="center narrow mediaIntro">
+        Explore Sean’s platform, approved media resources, campaign photos,
+        and printable materials.
+      </p>
 
-  <p>
-    Read Sean’s platform, campaign statements, and public commentary.
-  </p>
+      <div className="campaignResourceGrid">
+        {/* Campaign Resources */}
+        <article className="campaignResourceCard">
+          <div className="campaignResourceHeader">
+            <div className="campaignResourceIcon">
+              <Newspaper />
+            </div>
 
-  <div className="media-document-list">
-    <a
-      className="media-document-link"
-      href="/assets/Platform & Core Pillars.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span>Platform &amp; Core Pillars</span>
-      <small>Open PDF</small>
-    </a>
+            <div>
+              <p className="campaignResourceLabel">Documents</p>
+              <h3>Campaign Resources</h3>
+            </div>
+          </div>
 
-    <a
-      className="media-document-link"
-      href="/assets/motion-metro-sewage-plant-inquiry.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span>
-        Letter to the Editor:
-        <br />
-        Metro Sewage Plant Inquiry Motion
-      </span>
+          <p className="campaignResourceDescription">
+            Read Sean’s platform, campaign statements, letters, and public
+            commentary.
+          </p>
 
-      <small>Open PDF</small>
-    </a>
-  </div>
-</div>
+          <div className="campaignResourceLinks">
+            <a
+              className="campaignResourceLink primaryResource"
+              href="/assets/Platform & Core Pillars.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Platform &amp; Core Pillars</span>
+              <small>Open PDF</small>
+            </a>
 
-       <div className="issue">
-  <UserRound />
+            <a
+              className="campaignResourceLink"
+              href="/assets/motion-metro-sewage-plant-inquiry.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                Letter to the Editor:
+                <br />
+                Metro Sewage Plant Inquiry Motion
+              </span>
+              <small>Open PDF</small>
+            </a>
+          </div>
+        </article>
 
-  <h3>Photos & Bio</h3>
+        {/* Photos and Media Kit */}
+        <article className="campaignResourceCard">
+          <div className="campaignResourceHeader">
+            <div className="campaignResourceIcon">
+              <UserRound />
+            </div>
 
-  <p>
-    Approved candidate photos, biography, media kit, and campaign
-    background for journalists, residents, and volunteers.
-  </p>
+            <div>
+              <p className="campaignResourceLabel">Media Kit</p>
+              <h3>Photos &amp; Biography</h3>
+            </div>
+          </div>
 
-  <div className="downloadButtons">
+          <p className="campaignResourceDescription">
+            Download Sean’s approved biography, media handout, and official
+            campaign photography.
+          </p>
 
-    <a
-      className="btn primary"
-      href="/assets/sean-alexander-media-handout.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Media Handout
-    </a>
+          <div className="campaignResourceLinks">
+            <a
+              className="campaignResourceLink primaryResource"
+              href="/assets/sean-alexander-media-handout.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Media Handout</span>
+              <small>Open PDF</small>
+            </a>
 
-    <a
-      className="btn"
-      href="/assets/sean-alexander-campaign-bio.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Campaign Biography
-    </a>
+            <a
+              className="campaignResourceLink"
+              href="/assets/sean-alexander-campaign-bio.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Campaign Biography</span>
+              <small>Open PDF</small>
+            </a>
 
-    <a
-      className="btn"
-      href="/assets/sean-official-portrait-waterfront.jpeg"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Official Portrait
-    </a>
+            <a
+              className="campaignResourceLink"
+              href="/assets/sean-official-portrait-waterfront.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Official Portrait</span>
+              <small>Open Photo</small>
+            </a>
 
-    <a
-      className="btn"
-      href="/assets/sean-professional-portrait-clipboard.jpeg"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Professional Portrait
-    </a>
+            <a
+              className="campaignResourceLink"
+              href="/assets/sean-professional-portrait-clipboard.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Professional Portrait</span>
+              <small>Open Photo</small>
+            </a>
 
-    <a
-      className="btn"
-      href="/assets/sean-city-hall.jpeg"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      City Hall Photo
-    </a>
+            <a
+              className="campaignResourceLink"
+              href="/assets/sean-city-hall.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>City Hall Photo</span>
+              <small>Open Photo</small>
+            </a>
 
-    <a
-      className="btn"
-      href="/assets/sean-community-waterfront.jpeg"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Community Waterfront Photo
-    </a>
+            <a
+              className="campaignResourceLink"
+              href="/assets/sean-community-waterfront.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Community Waterfront Photo</span>
+              <small>Open Photo</small>
+            </a>
 
-    <a
-      className="btn"
-      href="/assets/sean-labour-support.jpeg"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Community Support Photo
-    </a>
+            <a
+              className="campaignResourceLink"
+              href="/assets/sean-labour-support.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Community Support Photo</span>
+              <small>Open Photo</small>
+            </a>
+          </div>
+        </article>
 
-  </div>
-</div>
+        {/* Campaign Materials */}
+        <article className="campaignResourceCard campaignMaterialsCard">
+          <div className="campaignResourceHeader">
+            <div className="campaignResourceIcon">
+              <ExternalLink />
+            </div>
 
-<div className="issue downloadCard">
-  <ExternalLink />
+            <div>
+              <p className="campaignResourceLabel">Downloads</p>
+              <h3>Campaign Materials</h3>
+            </div>
+          </div>
 
-  <h3>Campaign Materials</h3>
+          <p className="campaignResourceDescription">
+            Download campaign materials to share with neighbours, volunteers,
+            and community supporters.
+          </p>
 
-  <p>
-    Download Sean's campaign rack card, share it with neighbours,
-    or scan the QR code to visit the campaign website.
-  </p>
+          <div className="campaignQRWrap">
+            <img
+              src="/assets/sean-website-qr.png"
+              alt="QR code for Sean Alexander’s campaign website"
+              className="campaignResourceQR"
+            />
 
-  <img
-    src="/assets/sean-website-qr.png"
-    alt="Sean Alexander Campaign QR Code"
-    className="downloadQR"
-  />
+            <p>
+              Scan to visit
+              <br />
+              <strong>seanfornorthvan.ca</strong>
+            </p>
+          </div>
 
-  <div className="downloadButtons">
-    <a
-      className="btn primary"
-      href="/assets/sean-rack-card.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Download Rack Card
-    </a>
+          <div className="campaignResourceLinks">
+            <a
+              className="campaignResourceLink primaryResource"
+              href="/assets/sean-rack-card.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Campaign Rack Card</span>
+              <small>Open PDF</small>
+            </a>
 
-    <a
-      className="btn"
-      href="/assets/sean-website-qr.png"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Download QR Code
-    </a>
-   </div>
-</div>
-
-</div>
-
-</section>
+            <a
+              className="campaignResourceLink"
+              href="/assets/sean-website-qr.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Campaign QR Code</span>
+              <small>Open Image</small>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
   );
 }
 
