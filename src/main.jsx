@@ -621,6 +621,15 @@ function Media() {
 
           <div className="campaignResourceLinks">
             <a
+  className="campaignResourceLink"
+  href="/assets/why-im-running.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>Why I'm Running</span>
+  <small>Open PDF</small>
+</a>
+            <a
               className="campaignResourceLink primaryResource"
               href="/assets/Platform & Core Pillars.pdf"
               target="_blank"
