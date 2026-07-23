@@ -384,16 +384,16 @@ function Events() {
     <div>
       <span className="event-detail-icon">📅</span>
       <div>
-        <strong>Saturday, July 18, 2026</strong>
-        <p>1:00 PM to 2:00 PM</p>
+        <strong>Saturday, July 25, 2026</strong>
+        <p>2:00 PM to 3:30 PM</p>
       </div>
     </div>
 
     <div>
       <span className="event-detail-icon">📍</span>
       <div>
-        <strong>15th &amp; Lonsdale</strong>
-        <p>North Vancouver, BC V7M 2H9 — near BMO Bank</p>
+        <strong>The Shipyards</strong>
+        <p>North Vancouver, BC V7L 0B3 </p>
       </div>
     </div>
   </div>
@@ -406,7 +406,7 @@ function Events() {
   <div className="event-card-actions">
     <a
       className="btn primary"
-      href="https://www.google.com/maps/search/?api=1&query=15th%20%26%20Lonsdale%2C%20North%20Vancouver%2C%20BC%20V7M%202H9"
+      href="https://www.google.com/maps/search/?api=1&query=125+Victory+Ship+Way+North+Vancouver+BC+V7L+0B3"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -415,7 +415,7 @@ function Events() {
 
     <a
       className="btn secondary"
-      href="/assets/community-conversation-july-18-2026.png"
+      href="/assets/community-conversation-july-25-2026.png"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -424,7 +424,7 @@ function Events() {
   </div>
 </div>
 
-      <img src="/assets/community-conversation-july-18-2026.png" />
+      <img src="/assets/community-conversation-july-25-2026.png" />
     </section>
   );
 }
