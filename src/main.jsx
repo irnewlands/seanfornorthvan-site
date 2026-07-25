@@ -129,7 +129,12 @@ function Hero() {
 
 function FeaturedVideo() {
   const featuredVideoUrl =
-  "https://www.facebook.com/reel/1364207198371468/";
+    "https://www.facebook.com/reel/1364207198371468/";
+
+  const facebookEmbedUrl =
+    `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
+      featuredVideoUrl
+    )}&show_text=false&width=500`;
 
   return (
     <section className="section featuredVideo">
