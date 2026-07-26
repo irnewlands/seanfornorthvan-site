@@ -1439,3 +1439,12 @@ footer {
   line-height: 1;
   text-transform: uppercase;
 }
+.featuredVideoFrame {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.featuredVideoFrame iframe {
+  width: 100%;
+  border-radius: 20px;
+}
