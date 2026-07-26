@@ -127,41 +127,19 @@ function Hero() {
   );
 }
 
-function FeaturedVideo() {
-  const featuredVideoUrl =
-    "https://www.facebook.com/reel/1364207198371468/";
-
-  const facebookEmbedUrl =
-    `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
-      featuredVideoUrl
-    )}&show_text=false&width=500`;
-
-  return (
-    <section className="section featuredVideo">
-      <div className="featuredVideoIntro">
-        <p className="eyebrow center">Featured Campaign Video</p>
-
-        <h2 className="center">Hear Directly From Sean</h2>
-
-        <p className="center narrow">
-          Watch Sean discuss his campaign and his vision for a stronger,
-          more connected North Vancouver.
-        </p>
-      </div>
-
-      <div className="featuredVideoPlayer">
-        <iframe
-          src={facebookEmbedUrl}
-          title="Featured campaign video from Sean Alexander"
-          width="500"
-          height="889"
-          scrolling="no"
-          frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          allowFullScreen
-          loading="lazy"
-        />
-      </div>
+<div className="featuredVideoFrame">
+  <iframe
+    src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1364207198371468%2F&show_text=false&width=500&t=0"
+    width="100%"
+    height="700"
+    style={{ border: "none", overflow: "hidden" }}
+    scrolling="no"
+    frameBorder="0"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    allowFullScreen
+    title="Sean Alexander Featured Campaign Video"
+  />
+</div> 
 
       <div className="featuredVideoActions">
         <a
