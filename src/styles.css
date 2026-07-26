@@ -1448,3 +1448,12 @@ footer {
   width: 100%;
   border-radius: 20px;
 }
+.featuredVideoFrame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+  background: #071b3a;
+  border-radius: 18px;
+}
