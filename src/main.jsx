@@ -382,8 +382,8 @@ function Events() {
     <div>
       <span className="event-detail-icon">📅</span>
       <div>
-        <strong>Saturday, July 25, 2026</strong>
-        <p>2:00 PM to 3:30 PM</p>
+        <strong>Saturday, August 8, 2026</strong>
+        <p>1:00 PM to 3:00 PM</p>
       </div>
     </div>
 
@@ -413,7 +413,7 @@ function Events() {
 
     <a
       className="btn secondary"
-      href="/assets/community-conversation-july-25-2026.png"
+      href="/assets/community-conversation-august-8-2026.png"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -422,7 +422,7 @@ function Events() {
   </div>
 </div>
 
-      <img src="/assets/community-conversation-july-25-2026.png" />
+      <img src="/assets/community-conversation-august-8-2026.png" />
     </section>
   );
 }
