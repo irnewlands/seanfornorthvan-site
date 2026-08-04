@@ -121,7 +121,7 @@ function Hero() {
   </svg>
 </a>
   <a href="https://www.linkedin.com/in/sean-alexander-365bba413/" target="_blank" rel="noopener noreferrer">in</a>
-  <a href="mailto:sda.cnv.2026@gmail.com"><Mail /></a>
+  <a href="mailto:info@seanfornorthvan.ca"><Mail /></a>
 </div>
     </section>
   );
@@ -338,7 +338,7 @@ function Voice() {
 />
 
   <p className="formDisclaimer">
-    You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
+    You can unsubscribe at any time by emailing info@seanfornorthvan.ca.
   </p>
 
  <button type="submit" className="btn primary">
@@ -368,7 +368,7 @@ function Events() {
 
       <a
   className="btn white"
-  href="mailto:sda.cnv.2026@gmail.com?subject=Invite%20Sean%20to%20an%20Event&body=Event%20Name:%0D%0AEvent%20Date:%0D%0ALocation:%0D%0AExpected%20Attendance:%0D%0AAdditional%20Details:"
+  href="mailto:info@seanfornorthvan.ca?subject=Invite%20Sean%20to%20an%20Event&body=Event%20Name:%0D%0AEvent%20Date:%0D%0ALocation:%0D%0AExpected%20Attendance:%0D%0AAdditional%20Details:"
 >
   Invite Sean to an event
 </a>
@@ -493,7 +493,7 @@ function Volunteer() {
         />
 
         <p className="formDisclaimer">
-          You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
+          You can unsubscribe at any time by emailing info@seanfornorthvan.ca.
         </p>
 
         <button className="btn primary" type="submit">
@@ -819,7 +819,7 @@ function Contact() {
       <p>Candidate for North Vancouver City Council</p>
      <p className="footerContact">
   <Mail size={16} />
-  <span>sda.cnv.2026@gmail.com</span>
+  <span>info@seanfornorthvan.ca</span>
 
   <span className="footerDivider">|</span>
 
@@ -849,7 +849,7 @@ function Contact() {
   </svg>
 </a>
   <a href="https://www.linkedin.com/in/sean-alexander-365bba413/" target="_blank" rel="noopener noreferrer">in</a>
-  <a href="mailto:sda.cnv.2026@gmail.com"><Mail /></a>
+  <a href="mailto:info@seanfornorthvan.ca"><Mail /></a>
 </div>
       <p className="auth"> Authorized by the Financial Agent for Sean Alexander </p>
     </footer>
