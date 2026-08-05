@@ -9,8 +9,6 @@ import {
   Car,
   Heart,
   Megaphone,
-  Menu,
-  X,
   Handshake,
   Eye,
   DollarSign,
@@ -31,22 +29,25 @@ function anchor(name) {
 }
 
 function Header() {
-  const [open, setOpen] = React.useState(false);
-
   return (
     <header className="header">
       <a className="brandLogo headerBrandGroup" href="#home">
-  <img className="headerMark" src="/assets/sean-cnv-logo.svg" alt="Sean for North Vancouver City Council" />
-  <img className="headerSignature" src="/assets/sean-header-signature.svg" alt="Sean Alexander" />
-</a>
+        <img
+          className="headerMark"
+          src="/assets/sean-cnv-logo.svg"
+          alt="Sean for North Vancouver City Council"
+        />
 
-      <button className="menu" aria-label="Open menu" onClick={() => setOpen(!open)}>
-        {open ? <X /> : <Menu />}
-      </button>
+        <img
+          className="headerSignature"
+          src="/assets/sean-header-signature.svg"
+          alt="Sean Alexander"
+        />
+      </a>
 
-      <nav className={open ? 'open' : ''}>
+      <nav className="headerNav">
         {nav.map((n) => (
-          <a key={n} onClick={() => setOpen(false)} href={anchor(n)}>
+          <a key={n} href={anchor(n)}>
             {n}
           </a>
         ))}
