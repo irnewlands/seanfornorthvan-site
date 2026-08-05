@@ -1457,3 +1457,85 @@ footer {
   background: #071b3a;
   border-radius: 18px;
 }
+/* Expanded mobile navigation */
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 18px 10px;
+    height: auto;
+    min-height: 0;
+    z-index: 20;
+  }
+
+  /* Sean for North Van + Sean Alexander graphics */
+  .headerBrandGroup {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .headerMark {
+    width: 54px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .headerSignature {
+    display: block;
+    width: min(68vw, 330px);
+    height: auto;
+    margin-left: 14px;
+  }
+
+  /* Remove hamburger icon */
+  .header .menu {
+    display: none;
+  }
+
+  /* Full-width menu below the campaign graphics */
+  .header nav,
+  .header nav.open {
+    position: static;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px 0 2px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 14px;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header nav a {
+    display: inline-block;
+    padding: 5px 3px;
+    color: white;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  /* Prevent the expanded header from covering the BC flag */
+  .hero {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .heroFlag {
+    position: relative;
+    top: auto;
+    z-index: 1;
+  }
+}
