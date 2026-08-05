@@ -390,7 +390,7 @@ function Events() {
     <div>
       <span className="event-detail-icon">📍</span>
       <div>
-        <<strong>15th &amp; Lonsdale</strong>
+        <strong>15th &amp; Lonsdale</strong>
 <p>North Vancouver, BC V7M 2H9 — near BMO Bank</p>
       </div>
     </div>
