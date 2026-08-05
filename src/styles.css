@@ -590,29 +590,7 @@ footer {
     max-height: 48px;
     width: auto;
   }
-
-  nav {
-    display: none;
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: var(--navy);
-    padding: 25px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav.open {
-    display: flex;
-  }
-
-  .menu {
-    display: block;
-    flex-shrink: 0;
-  }
-
+  
   .hero,
   .split,
   .event,
@@ -690,30 +668,6 @@ footer {
     align-items: flex-start;
   }
 }
-@media (max-width: 1200px) {
-
-  nav {
-    display: none;
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: var(--navy);
-    padding: 25px;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 100;
-  }
-
-  nav.open {
-    display: flex;
-  }
-
-  .menu {
-    display: block;
-    flex-shrink: 0;
-  }
 
   .headerSignature {
     max-width: 600px;
@@ -1457,188 +1411,90 @@ footer {
   background: #071b3a;
   border-radius: 18px;
 }
-/* Expanded mobile navigation */
+/* Mobile header with permanently visible navigation */
 @media (max-width: 768px) {
   .header {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 12px 18px 10px;
-    height: auto;
-    min-height: 0;
-    z-index: 20;
-  }
-
-  /* Sean for North Van + Sean Alexander graphics */
-  .headerBrandGroup {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    min-width: 0;
-  }
-
-  .headerMark {
-    width: 54px;
-    height: auto;
-    flex-shrink: 0;
-  }
-
-  .headerSignature {
-    display: block;
-    width: min(68vw, 330px);
-    height: auto;
-    margin-left: 14px;
-  }
-
-  /* Remove hamburger icon */
-  .header .menu {
-    display: none;
-  }
-
-  /* Full-width menu below the campaign graphics */
-  .header nav,
-  .header nav.open {
-    position: static;
-    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     width: 100%;
     height: auto;
-    margin-top: 10px;
-    padding: 10px 0 2px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px 14px;
-    background: transparent;
-    box-shadow: none;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .header nav a {
-    display: inline-block;
-    padding: 5px 3px;
-    color: white;
-    font-size: 0.78rem;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    white-space: nowrap;
-  }
-
-  /* Prevent the expanded header from covering the BC flag */
-  .hero {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .heroFlag {
-    position: relative;
-    top: auto;
-    z-index: 1;
-  }
-}
-@media (max-width: 420px) {
-  .header nav {
-    gap: 4px 10px;
-  }
-
-  .header nav a {
-    font-size: 0.7rem;
-  }
-
-  .headerSignature {
-    width: 65vw;
-    margin-left: 8px;
-  }
-}
-/* Always-visible mobile navigation */
-@media (max-width: 768px) {
-  .header {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    padding: 12px 18px 8px;
-    background: #082b4d;
-    z-index: 20;
+    padding: 10px 14px 8px;
+    overflow: visible;
+    background: rgba(6, 36, 71, 0.98);
   }
 
   .headerBrandGroup {
     display: flex;
     align-items: center;
     width: 100%;
-    min-width: 0;
+    max-width: none;
+    gap: 10px;
+    overflow: visible;
   }
 
   .headerMark {
-    width: 56px;
+    width: 48px;
     height: auto;
-    flex-shrink: 0;
+    max-height: none;
+    flex: 0 0 auto;
   }
 
   .headerSignature {
     display: block;
-    width: calc(100% - 75px);
-    max-width: 380px;
+    width: calc(100% - 60px);
+    max-width: 360px;
     height: auto;
-    margin-left: 14px;
+    margin: 0;
+    flex: 0 1 auto;
   }
 
-  /* Hide any old hamburger button that remains cached */
-  .header .menu,
-  .header button.menu {
+  .menu {
     display: none !important;
   }
 
   .headerNav,
-  .header nav,
-  .header nav.open {
-    position: static !important;
-    inset: auto !important;
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap;
+  .header nav {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto !important;
-    margin: 10px 0 0;
-    padding: 9px 4px 3px;
-    gap: 5px 15px;
-    overflow: visible;
+    height: auto;
+    margin: 8px 0 0;
+    padding: 8px 0 2px;
+    gap: 7px 14px;
     background: transparent;
-    box-shadow: none;
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    overflow: visible;
   }
 
   .headerNav a,
   .header nav a {
-    display: inline-block;
+    display: block;
     width: auto;
-    padding: 5px 2px;
+    padding: 4px 2px;
     color: #ffffff;
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
     white-space: nowrap;
   }
 
-  /* Header remains in normal flow, so the BC flag stays visible below it */
   .hero {
-    margin-top: 0 !important;
+    margin-top: 0;
+    padding-top: 150px;
   }
 
   .heroFlag {
-    position: relative;
-    top: auto;
+    position: absolute;
+    top: 0;
+    height: 130px;
     display: block;
     z-index: 1;
   }
@@ -1646,22 +1502,25 @@ footer {
 
 @media (max-width: 420px) {
   .header {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .headerSignature {
-    width: calc(100% - 68px);
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .headerNav,
   .header nav {
-    gap: 3px 10px;
+    gap: 6px 9px;
   }
 
   .headerNav a,
   .header nav a {
-    font-size: 0.68rem;
+    font-size: 0.64rem;
+  }
+
+  .headerMark {
+    width: 42px;
+  }
+
+  .headerSignature {
+    width: calc(100% - 52px);
   }
 }
