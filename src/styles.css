@@ -1524,3 +1524,115 @@ footer {
     width: calc(100% - 52px);
   }
 }
+/* Mobile header: branding on first row, menu on second row */
+@media (max-width: 768px) {
+  .header {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 14px 8px !important;
+    overflow: visible !important;
+    background: rgba(6, 36, 71, 0.98) !important;
+  }
+
+  .headerBrandGroup {
+    grid-row: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: none !important;
+    gap: 12px !important;
+    overflow: visible !important;
+  }
+
+  .headerMark {
+    width: 48px !important;
+    height: auto !important;
+    max-height: none !important;
+    flex: 0 0 auto !important;
+  }
+
+  .headerSignature {
+    display: block !important;
+    width: calc(100% - 62px) !important;
+    max-width: 380px !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  .menu {
+    display: none !important;
+  }
+
+  .headerNav,
+  .header nav {
+    grid-row: 2 !important;
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, auto) !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 8px 0 0 !important;
+    padding: 9px 0 3px !important;
+    gap: 7px 13px !important;
+    background: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+
+  .headerNav a,
+  .header nav a {
+    display: block !important;
+    width: auto !important;
+    padding: 4px 2px !important;
+    color: #ffffff !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  .hero {
+    margin-top: 0 !important;
+    padding-top: 150px !important;
+  }
+
+  .heroFlag {
+    position: absolute !important;
+    top: 0 !important;
+    height: 130px !important;
+    display: block !important;
+    z-index: 1 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .headerNav,
+  .header nav {
+    gap: 6px 8px !important;
+  }
+
+  .headerNav a,
+  .header nav a {
+    font-size: 0.62rem !important;
+  }
+
+  .headerMark {
+    width: 42px !important;
+  }
+
+  .headerSignature {
+    width: calc(100% - 54px) !important;
+  }
+}
