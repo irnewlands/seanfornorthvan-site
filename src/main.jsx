@@ -390,8 +390,8 @@ function Events() {
     <div>
       <span className="event-detail-icon">📍</span>
       <div>
-        <strong>The Shipyards</strong>
-        <p>North Vancouver, BC V7L 0B3 </p>
+        <<strong>15th &amp; Lonsdale</strong>
+<p>North Vancouver, BC V7M 2H9 — near BMO Bank</p>
       </div>
     </div>
   </div>
@@ -404,7 +404,7 @@ function Events() {
   <div className="event-card-actions">
     <a
       className="btn primary"
-      href="https://www.google.com/maps/search/?api=1&query=125+Victory+Ship+Way+North+Vancouver+BC+V7L+0B3"
+href="https://www.google.com/maps/search/?api=1&query=15th+Street+and+Lonsdale+Avenue+North+Vancouver+BC+V7M+2H9"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -421,8 +421,10 @@ function Events() {
     </a>
   </div>
 </div>
-
-      <img src="/assets/community-conversation-august-8-2026.png" />
+      <img 
+        src="/assets/community-conversation-august-8-2026.png"
+          alt="Community conversation with Sean Alexander at 15th and Lonsdale on August 8, 2026, from 1:00 PM to 3:00 PM"
+        />
     </section>
   );
 }
