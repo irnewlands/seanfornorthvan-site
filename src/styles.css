@@ -1524,13 +1524,14 @@ footer {
     width: calc(100% - 52px);
   }
 }
-/* Mobile header: branding on first row, menu on second row */
-@media (max-width: 768px) {
+/* Branding first row, navigation second row on phones and tablets */
+@media (max-width: 1200px) {
   .header {
     position: relative !important;
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
     width: 100% !important;
     height: auto !important;
     padding: 10px 14px 8px !important;
@@ -1539,9 +1540,9 @@ footer {
   }
 
   .headerBrandGroup {
-    grid-row: 1 !important;
     display: flex !important;
     align-items: center !important;
+    justify-content: flex-start !important;
     width: 100% !important;
     max-width: none !important;
     gap: 12px !important;
@@ -1558,9 +1559,10 @@ footer {
   .headerSignature {
     display: block !important;
     width: calc(100% - 62px) !important;
-    max-width: 380px !important;
+    max-width: 430px !important;
     height: auto !important;
     margin: 0 !important;
+    flex: 0 1 auto !important;
   }
 
   .menu {
@@ -1568,21 +1570,23 @@ footer {
   }
 
   .headerNav,
-  .header nav {
-    grid-row: 2 !important;
+  .header nav,
+  .header nav.open {
     position: static !important;
     display: grid !important;
     grid-template-columns: repeat(4, auto) !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
+    height: auto !important;
     margin: 8px 0 0 !important;
-    padding: 9px 0 3px !important;
-    gap: 7px 13px !important;
+    padding: 9px 0 4px !important;
+    gap: 7px 14px !important;
     background: transparent !important;
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
+    overflow: visible !important;
   }
 
   .headerNav a,
@@ -1591,7 +1595,7 @@ footer {
     width: auto !important;
     padding: 4px 2px !important;
     color: #ffffff !important;
-    font-size: 0.7rem !important;
+    font-size: 0.72rem !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
     text-align: center !important;
@@ -1612,12 +1616,7 @@ footer {
   }
 }
 
-@media (max-width: 420px) {
-  .header {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
+@media (max-width: 480px) {
   .headerNav,
   .header nav {
     gap: 6px 8px !important;
@@ -1625,7 +1624,7 @@ footer {
 
   .headerNav a,
   .header nav a {
-    font-size: 0.62rem !important;
+    font-size: 0.63rem !important;
   }
 
   .headerMark {
