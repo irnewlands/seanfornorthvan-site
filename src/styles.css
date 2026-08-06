@@ -1676,3 +1676,13 @@ footer {
     text-align: center !important;
   }
 }
+.headerNav,
+.header nav {
+    margin-top: 12px !important;
+    padding-top: 10px !important;
+}
+.headerNav,
+.header nav {
+    border-top: 1px solid rgba(194, 166, 92, 0.35);
+    padding-top: 10px !important;
+}
