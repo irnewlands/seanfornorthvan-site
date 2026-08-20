@@ -383,7 +383,7 @@ function Events() {
     <div>
       <span className="event-detail-icon">📅</span>
       <div>
-        <strong>Sunday, August 16, 2026</strong>
+        <strong>Saturday, August 22, 2026</strong>
         <p>1:00 PM to 3:00 PM</p>
       </div>
     </div>
@@ -391,8 +391,8 @@ function Events() {
     <div>
       <span className="event-detail-icon">📍</span>
       <div>
-        <strong>The Shipyards</strong>
- <p>125 Victory Ship Way, North Vancouver, BC V7L 0B3</p>
+        <strong>15th &amp; Lonsdale</strong>
+ <p>North Vancouver, BC V7M 2H9 — near BMO Bank</p>
       </div>
     </div>
   </div>
@@ -405,7 +405,7 @@ function Events() {
   <div className="event-card-actions">
     <a
       className="btn primary"
-href="https://www.google.com/maps/search/?api=1&query=125+Victory+Ship+Way+North+Vancouver+BC+V7L+0B3"
+href="https://www.google.com/maps/search/?api=1&query=15th%20%26%20Lonsdale%2C%20North%20Vancouver%2C%20BC%20V7M%202H9"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -414,7 +414,7 @@ href="https://www.google.com/maps/search/?api=1&query=125+Victory+Ship+Way+North
 
     <a
       className="btn secondary"
-      href="/assets/community-conversation-august-16-2026.png"
+      href="/assets/community-conversation-august-22-2026.png"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -423,8 +423,8 @@ href="https://www.google.com/maps/search/?api=1&query=125+Victory+Ship+Way+North
   </div>
 </div>
       <img 
-        src="/assets/community-conversation-august-16-2026.png"
-          alt="Community conversation with Sean Alexander at The Shipyards on August 16, 2026, from 1:00 PM to 3:00 PM"
+        src="/assets/community-conversation-august-22-2026.png"
+          alt="Community Conversation at 15th and Lonsdale on August 22, 2026"
         />
     </section>
   );
