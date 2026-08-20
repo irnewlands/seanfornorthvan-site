@@ -854,7 +854,7 @@ function Contact() {
   <a href="https://www.linkedin.com/in/sean-alexander-365bba413/" target="_blank" rel="noopener noreferrer">in</a>
   <a href="mailto:info@seanfornorthvan.ca"><Mail /></a>
 </div>
-      <p className="auth"> Authorized by the Financial Agent for Sean Alexander </p>
+      <p className="auth"> Paid for and authorized by the Official Agent for Sean Alexander </p>
     </footer>
   );
 }
