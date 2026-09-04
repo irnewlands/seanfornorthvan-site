@@ -1938,3 +1938,162 @@ footer {
   }
 }
 
+/* =========================================================
+   FIX: CAMPAIGN LAUNCH BANNER + POSTER RESPONSIVENESS
+   Paste this at the VERY END of styles.css
+   ========================================================= */
+
+/* ---------- Campaign launch banner ---------- */
+.campaignLaunchBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 64px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background: #ffd400 !important;
+  border-top: 3px solid #c51f2f;
+  border-bottom: 3px solid #c51f2f;
+
+  color: #c51f2f !important;
+  text-decoration: none !important;
+  text-align: center;
+  font-size: clamp(1rem, 2.2vw, 1.45rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 1000;
+}
+
+.campaignLaunchBanner span {
+  display: inline-block;
+  max-width: 1400px;
+  color: #c51f2f !important;
+  animation: campaignLaunchFlash 0.9s steps(2, start) infinite;
+}
+
+.campaignLaunchBanner:hover {
+  background: #ffe866 !important;
+  color: #a70f20 !important;
+}
+
+@keyframes campaignLaunchFlash {
+  0%, 48% {
+    opacity: 1;
+  }
+  49%, 100% {
+    opacity: 0.18;
+  }
+}
+
+/* Respect reduced-motion accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  .campaignLaunchBanner span {
+    animation: none;
+  }
+}
+
+/* ---------- Campaign launch featured card ---------- */
+.campaignLaunchCard {
+  width: min(100%, 920px) !important;
+  max-width: 920px !important;
+  margin: 0 auto 42px !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Prevent the flyer from ever widening the page */
+.campaignLaunchPoster {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 26px auto 0 !important;
+  object-fit: contain;
+  box-sizing: border-box;
+  border-radius: 14px;
+}
+
+/* Make sure every image inside the campaign launch card stays contained */
+.campaignLaunchCard img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* ---------- Events grid alignment ---------- */
+.eventsSection {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.eventsIntro,
+.eventsGrid,
+.eventsInvite {
+  width: min(100%, 1180px);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.eventListCard {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Tablet / mobile ---------- */
+@media (max-width: 850px) {
+  .campaignLaunchBanner {
+    min-height: 72px;
+    padding: 16px 14px;
+    font-size: 1rem;
+  }
+
+  .campaignLaunchCard {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto 30px !important;
+    padding: 20px !important;
+  }
+
+  .campaignLaunchPoster {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 22px !important;
+  }
+
+  .eventsGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .campaignLaunchBanner {
+    min-height: 78px;
+    padding: 16px 12px;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .campaignLaunchCard {
+    padding: 16px !important;
+    border-radius: 16px;
+  }
+
+  .campaignLaunchPoster {
+    border-radius: 10px;
+  }
+}
+
