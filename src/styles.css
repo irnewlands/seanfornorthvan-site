@@ -2097,3 +2097,135 @@ footer {
   }
 }
 
+/* =========================================================
+   ACCESSIBILITY + STICKY HEADER/BANNER FIX
+   Paste at the VERY END of styles.css
+   ========================================================= */
+
+/* ---------- Fix unreadable white text in campaign launch card ---------- */
+.campaignLaunchCard,
+.campaignLaunchCard p,
+.campaignLaunchCard small,
+.campaignLaunchCard span,
+.campaignLaunchCard strong {
+  color: #0b2239 !important;
+}
+
+.campaignLaunchCard .event-card-label {
+  color: #4f772d !important;
+}
+
+.campaignLaunchCard h3 {
+  color: #08243f !important;
+}
+
+.campaignLaunchCard .event-card-description {
+  color: #243746 !important;
+}
+
+.campaignLaunchCard .event-card-details > div {
+  background: #eef3f1 !important;
+}
+
+.campaignLaunchCard .event-card-details strong {
+  color: #08243f !important;
+}
+
+.campaignLaunchCard .event-card-details p,
+.campaignLaunchCard .event-card-details small {
+  color: #4a5b66 !important;
+}
+
+/* Keep the primary button readable */
+.campaignLaunchCard .btn.primary {
+  background: #5d8b2f !important;
+  color: #ffffff !important;
+  border-color: #5d8b2f !important;
+}
+
+/* Make secondary button visible on the light card */
+.campaignLaunchCard .btn.secondary {
+  background: #ffffff !important;
+  color: #08243f !important;
+  border: 2px solid #08243f !important;
+}
+
+.campaignLaunchCard .btn.secondary:hover {
+  background: #08243f !important;
+  color: #ffffff !important;
+}
+
+/* ---------- Keep event list card text readable ---------- */
+.eventListCard,
+.eventListCard p,
+.eventListCard span,
+.eventListCard small {
+  color: #243746;
+}
+
+.eventListCard h3,
+.eventListCard strong {
+  color: #08243f;
+}
+
+.eventListCard .eventType {
+  color: #5d8b2f;
+  font-weight: 900;
+}
+
+/* ---------- Sticky campaign banner + navigation ---------- */
+/*
+   Banner stays at the very top.
+   Header sits directly underneath it.
+*/
+.campaignLaunchBanner {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1200 !important;
+}
+
+.header {
+  position: sticky !important;
+  top: 64px !important;
+  z-index: 1190 !important;
+}
+
+/* Prevent anchor links from hiding under sticky banner/header */
+section[id] {
+  scroll-margin-top: 150px;
+}
+
+/* ---------- Mobile/tablet sticky offsets ---------- */
+@media (max-width: 850px) {
+  .header {
+    top: 72px !important;
+  }
+
+  section[id] {
+    scroll-margin-top: 165px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    top: 78px !important;
+  }
+
+  section[id] {
+    scroll-margin-top: 175px;
+  }
+}
+
+/* ---------- Safety: avoid sticky elements causing page width overflow ---------- */
+.campaignLaunchBanner,
+.header {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Optional subtle separation while scrolling */
+.header {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
+}
+
