@@ -28,6 +28,120 @@ function anchor(name) {
   return '#' + name.toLowerCase().replaceAll(' ', '-');
 }
 
+function CampaignLaunchBanner() {
+  return (
+    <a className="campaignLaunchBanner" href="#events">
+      <span>
+        CAMPAIGN LAUNCH • SUNDAY, SEPTEMBER 20 • 1:00 PM–3:00 PM • QUAYSIDE COHOUSING VILLAGE • CLICK FOR DETAILS
+      </span>
+    </a>
+  );
+}
+
+const campaignEvents = [
+  {
+    date: 'Saturday, September 5, 2026',
+    title: 'Day of Action',
+    location: 'Waterfront Park',
+    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
+    plusCode: '8W67+PJ North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
+  },
+  {
+    date: 'Sunday, September 6, 2026',
+    title: 'Day of Action',
+    location: '15th & Lonsdale (East Side)',
+    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
+    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
+  },
+  {
+    date: 'Sunday, September 13, 2026',
+    title: 'Meet & Greet',
+    location: '15th & Lonsdale (East Side)',
+    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
+    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
+  },
+  {
+    date: 'Saturday, September 19, 2026',
+    title: 'Day of Action',
+    location: 'Waterfront Park',
+    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
+    plusCode: '8W67+PJ North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
+  },
+  {
+    date: 'Sunday, September 20, 2026',
+    title: 'CAMPAIGN LAUNCH',
+    location: 'Quayside Cohousing Village',
+    address: '510 Chesterfield Ave, North Vancouver, BC V7M 3L2',
+    plusCode: '8W8C+JQ North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/RLAbmtvpvo3CEG697?g_st=ac',
+    featured: true,
+    poster: '/assets/campaign-launch-september-20-2026.png'
+  },
+  {
+    date: 'Saturday, September 26, 2026',
+    title: 'Day of Action',
+    location: 'Waterfront Park',
+    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
+    plusCode: '8W67+PJ North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
+  },
+  {
+    date: 'Sunday, September 27, 2026',
+    title: 'Day of Action',
+    location: '15th & Lonsdale (East Side)',
+    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
+    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
+  },
+  {
+    date: 'Saturday, October 3, 2026',
+    title: 'Day of Action',
+    location: 'Waterfront Park',
+    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
+    plusCode: '8W67+PJ North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
+  },
+  {
+    date: 'Sunday, October 4, 2026',
+    title: 'Day of Action',
+    location: '15th & Lonsdale (East Side)',
+    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
+    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
+  },
+  {
+    date: 'Saturday, October 10, 2026',
+    title: 'Day of Action',
+    location: 'Waterfront Park',
+    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
+    plusCode: '8W67+PJ North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
+  },
+  {
+    date: 'Sunday, October 11, 2026',
+    title: 'Day of Action',
+    location: '15th & Lonsdale (East Side)',
+    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
+    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
+    time: '1:00 PM – 3:00 PM',
+    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
+  }
+];
+
 function Header() {
   return (
     <header className="header">
@@ -351,81 +465,93 @@ function Voice() {
 }
 
 function Events() {
+  const launchEvent = campaignEvents.find((event) => event.featured);
+
   return (
-    <section id="events" className="section event">
-      <div>
-        <p className="eyebrow">Campaign Events</p>
-        <h2>Let’s talk about the future of North Vancouver.</h2>
-        <p>
-          Sean’s campaign will centre community conversations, listening sessions, and practical forums where residents
-          can raise concerns before decisions are made.
+    <section id="events" className="section eventsSection">
+      <div className="eventsIntro">
+        <p className="eyebrow center">Campaign Events</p>
+        <h2 className="center">Join Sean Across North Vancouver.</h2>
+        <p className="center narrow">
+          Meet Sean, volunteer with the campaign, ask questions, share your vision,
+          and help build a stronger North Vancouver.
         </p>
-
-        <ul className="checks">
-          <li><Calendar /> Featured community conversation</li>
-          <li><MapPin /> North Vancouver neighbourhood locations</li>
-          <li><Users /> Bring your questions, concerns, and ideas</li>
-        </ul>
-
-      <a
-  className="btn white"
-  href="mailto:info@seanfornorthvan.ca?subject=Invite%20Sean%20to%20an%20Event&body=Event%20Name:%0D%0AEvent%20Date:%0D%0ALocation:%0D%0AExpected%20Attendance:%0D%0AAdditional%20Details:"
->
-  Invite Sean to an event
-</a>
       </div>
-      <div className="featured-event-card">
-  <div className="event-card-label">Upcoming Community Conversation</div>
 
-  <h3>Let’s Talk About the Future of North Vancouver</h3>
+      {launchEvent && (
+        <article className="featured-event-card campaignLaunchCard">
+          <div className="event-card-label">Official Campaign Launch</div>
+          <h3>{launchEvent.title}</h3>
 
-  <div className="event-card-details">
-    <div>
-      <span className="event-detail-icon">📅</span>
-      <div>
-        <strong>Saturday, August 22, 2026</strong>
-        <p>1:00 PM to 3:00 PM</p>
+          <div className="event-card-details">
+            <div>
+              <Calendar />
+              <div>
+                <strong>{launchEvent.date}</strong>
+                <p>{launchEvent.time}</p>
+              </div>
+            </div>
+            <div>
+              <MapPin />
+              <div>
+                <strong>{launchEvent.location}</strong>
+                <p>{launchEvent.address}</p>
+                <small>{launchEvent.plusCode}</small>
+              </div>
+            </div>
+          </div>
+
+          <p className="event-card-description">
+            Join Sean, volunteers, and supporters as we officially launch the campaign
+            for North Vancouver City Council.
+          </p>
+
+          <div className="event-card-actions">
+            <a className="btn primary" href={launchEvent.mapUrl} target="_blank" rel="noopener noreferrer">
+              Get Directions
+            </a>
+            <a className="btn secondary" href={launchEvent.poster} target="_blank" rel="noopener noreferrer">
+              View Campaign Launch Flyer
+            </a>
+          </div>
+
+          <img
+            className="campaignLaunchPoster"
+            src={launchEvent.poster}
+            alt="Sean Alexander Campaign Launch on September 20, 2026 at Quayside Cohousing Village"
+          />
+        </article>
+      )}
+
+      <div className="eventsGrid">
+        {campaignEvents.filter((event) => !event.featured).map((event) => (
+          <article className="eventListCard" key={`${event.date}-${event.location}`}>
+            <p className="eventType">{event.title}</p>
+            <h3>{event.date}</h3>
+            <p className="eventTime"><Calendar size={18} /> {event.time}</p>
+            <p className="eventLocation">
+              <MapPin size={18} />
+              <span>
+                <strong>{event.location}</strong><br />
+                {event.address}<br />
+                <small>{event.plusCode}</small>
+              </span>
+            </p>
+            <a className="btn primary" href={event.mapUrl} target="_blank" rel="noopener noreferrer">
+              Get Directions
+            </a>
+          </article>
+        ))}
       </div>
-    </div>
 
-    <div>
-      <span className="event-detail-icon">📍</span>
-      <div>
-        <strong>15th &amp; Lonsdale</strong>
- <p>North Vancouver, BC V7M 2H9 — near BMO Bank</p>
+      <div className="eventsInvite">
+        <a
+          className="btn white"
+          href="mailto:info@seanfornorthvan.ca?subject=Invite%20Sean%20to%20an%20Event&body=Event%20Name:%0D%0AEvent%20Date:%0D%0ALocation:%0D%0AExpected%20Attendance:%0D%0AAdditional%20Details:"
+        >
+          Invite Sean to an event
+        </a>
       </div>
-    </div>
-  </div>
-
-  <p className="event-card-description">
-    Come ask questions, share your vision, and talk about the upcoming
-    municipal election.
-  </p>
-
-  <div className="event-card-actions">
-    <a
-      className="btn primary"
-href="https://www.google.com/maps/search/?api=1&query=15th%20%26%20Lonsdale%2C%20North%20Vancouver%2C%20BC%20V7M%202H9"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Get Directions
-    </a>
-
-    <a
-      className="btn secondary"
-      href="/assets/community-conversation-august-22-2026.png"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View Event Poster
-    </a>
-  </div>
-</div>
-      <img 
-        src="/assets/community-conversation-august-22-2026.png"
-          alt="Community Conversation at 15th and Lonsdale on August 22, 2026"
-        />
     </section>
   );
 }
@@ -862,6 +988,7 @@ function Contact() {
 function App() {
   return (
     <>
+      <CampaignLaunchBanner />
       <Header />
       <Hero />
       <FeaturedVideo />
