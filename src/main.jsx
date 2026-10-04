@@ -40,78 +40,6 @@ function VotingBanner() {
 
 const campaignEvents = [
   {
-    date: 'Saturday, September 5, 2026',
-    title: 'Day of Action',
-    location: 'Waterfront Park',
-    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
-    plusCode: '8W67+PJ North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
-  },
-  {
-    date: 'Sunday, September 6, 2026',
-    title: 'Day of Action',
-    location: '15th & Lonsdale (East Side)',
-    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
-    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
-  },
-  {
-    date: 'Sunday, September 13, 2026',
-    title: 'Meet & Greet',
-    location: '15th & Lonsdale (East Side)',
-    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
-    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
-  },
-  {
-    date: 'Saturday, September 19, 2026',
-    title: 'Day of Action',
-    location: 'Waterfront Park',
-    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
-    plusCode: '8W67+PJ North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
-  },
-  {
-    date: 'Sunday, September 20, 2026',
-    title: 'CAMPAIGN LAUNCH',
-    location: 'Quayside Cohousing Village',
-    address: '510 Chesterfield Ave, North Vancouver, BC V7M 3L2',
-    plusCode: '8W8C+JQ North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/RLAbmtvpvo3CEG697?g_st=ac'
-  },
-  {
-    date: 'Saturday, September 26, 2026',
-    title: 'Day of Action',
-    location: 'Waterfront Park',
-    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
-    plusCode: '8W67+PJ North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
-  },
-  {
-    date: 'Sunday, September 27, 2026',
-    title: 'Day of Action',
-    location: '15th & Lonsdale (East Side)',
-    address: 'Near McNews, 1460 Lonsdale Ave, North Vancouver, BC V7M 2J1',
-    plusCode: '8WCH+Q4R North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/vCUjUWYnUzLRWxNdA?g_st=ac'
-  },
-  {
-    date: 'Saturday, October 3, 2026',
-    title: 'Day of Action',
-    location: 'Waterfront Park',
-    address: 'Block, 200 Esplanade W, North Vancouver, BC V7L 2P7',
-    plusCode: '8W67+PJ North Vancouver, British Columbia',
-    time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/6ffgYbfy8XPYxmsc6?g_st=ac'
-  },
-  {
     date: 'Sunday, October 4, 2026',
     title: 'Day of Action',
     location: '15th & Lonsdale (East Side)',
@@ -234,7 +162,7 @@ function Hero() {
   </svg>
 </a>
   <a href="https://www.linkedin.com/in/sean-alexander-365bba413/" target="_blank" rel="noopener noreferrer">in</a>
-  <a href="mailto:info@seanfornorthvan.ca"><Mail /></a>
+  <a href="mailto:sda.cnv.2026@gmail.com"><Mail /></a>
 </div>
     </section>
   );
@@ -451,7 +379,7 @@ function Voice() {
 />
 
   <p className="formDisclaimer">
-    You can unsubscribe at any time by emailing info@seanfornorthvan.ca.
+    You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
   </p>
 
  <button type="submit" className="btn primary">
@@ -498,7 +426,7 @@ function Events() {
       <div className="eventsInvite">
         <a
           className="btn white"
-          href="mailto:info@seanfornorthvan.ca?subject=Invite%20Sean%20to%20an%20Event&body=Event%20Name:%0D%0AEvent%20Date:%0D%0ALocation:%0D%0AExpected%20Attendance:%0D%0AAdditional%20Details:"
+          href="mailto:sda.cnv.2026@gmail.com?subject=Invite%20Sean%20to%20an%20Event&body=Event%20Name:%0D%0AEvent%20Date:%0D%0ALocation:%0D%0AExpected%20Attendance:%0D%0AAdditional%20Details:"
         >
           Invite Sean to an event
         </a>
@@ -794,7 +722,7 @@ function Volunteer() {
         />
 
         <p className="formDisclaimer">
-          You can unsubscribe at any time by emailing info@seanfornorthvan.ca.
+          You can unsubscribe at any time by emailing sda.cnv.2026@gmail.com.
         </p>
 
         <button className="btn primary" type="submit">
@@ -1120,7 +1048,7 @@ function Contact() {
       <p>Candidate for North Vancouver City Council</p>
      <p className="footerContact">
   <Mail size={16} />
-  <span>info@seanfornorthvan.ca</span>
+  <span>sda.cnv.2026@gmail.com</span>
 
   <span className="footerDivider">|</span>
 
@@ -1150,7 +1078,7 @@ function Contact() {
   </svg>
 </a>
   <a href="https://www.linkedin.com/in/sean-alexander-365bba413/" target="_blank" rel="noopener noreferrer">in</a>
-  <a href="mailto:info@seanfornorthvan.ca"><Mail /></a>
+  <a href="mailto:sda.cnv.2026@gmail.com"><Mail /></a>
 </div>
       <p className="auth"> Paid for and authorized by the Official Agent for Sean Alexander 236-889-3500 </p>
     </footer>
