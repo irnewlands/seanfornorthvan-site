@@ -2688,4 +2688,174 @@ section[id],
     padding: 18px;
   }
 }
+/* =========================================================
+   VOTER HELP CONTACT BOX
+   ========================================================= */
 
+.votingHelpBox {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 24px auto 0;
+  padding: 32px 36px;
+
+  border-radius: 20px;
+  border-left: 8px solid var(--gold);
+
+  background: var(--navy);
+  color: #ffffff;
+
+  box-shadow: 0 14px 34px rgba(7, 24, 50, 0.14);
+}
+
+.votingHelpIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 76px;
+  height: 76px;
+  flex: 0 0 76px;
+
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.votingHelpIcon svg {
+  width: 38px;
+  height: 38px;
+}
+
+.votingHelpContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.votingHelpBox .votingKicker {
+  margin: 0 0 5px;
+  color: #b8d28f;
+}
+
+.votingHelpBox h3 {
+  margin: 0 0 8px;
+
+  color: var(--gold);
+
+  font-family: Montserrat, Inter, Arial, sans-serif;
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+}
+
+.votingHelpIntro {
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+
+.votingHelpContacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.votingHelpContacts a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #ffffff !important;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.votingHelpContacts a:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--gold);
+}
+
+.votingHelpContacts svg,
+.votingPhoneIcon {
+  width: 25px;
+  height: 25px;
+  flex: 0 0 auto;
+
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.votingHelpContacts span {
+  display: flex;
+  flex-direction: column;
+}
+
+.votingHelpContacts small {
+  margin-bottom: 2px;
+
+  color: #b8d28f;
+
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.votingHelpContacts strong {
+  color: #ffffff;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .votingHelpBox {
+    align-items: flex-start;
+    gap: 18px;
+
+    padding: 24px 20px;
+  }
+
+  .votingHelpIcon {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+  }
+
+  .votingHelpIcon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .votingHelpContacts {
+    flex-direction: column;
+  }
+
+  .votingHelpContacts a {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .votingHelpBox {
+    flex-direction: column;
+  }
+
+}
