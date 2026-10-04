@@ -680,7 +680,7 @@ function VotingInfo() {
           <p className="votingKicker">Special Voting for Patients</p>
           <h3>Healthcare Facilities</h3>
           <p>
-            <strong>Lions Gate Hospital &amp; HOpe Centre</strong><br />
+            <strong>Lions Gate Hospital &amp; Hope Centre</strong><br />
             October 10, 2026 • 9:00 a.m. – 4:00 p.m.
           </p>
           <p>
