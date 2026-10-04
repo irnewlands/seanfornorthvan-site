@@ -21,18 +21,18 @@ import {
 } from 'lucide-react';
 import './styles.css';
 
-const nav = ['Home', 'About', 'What Matters', 'Your Voice', 'Events', 'Volunteer', 'Donate', 'Contact'];
+const nav = ['Home', 'About', 'What Matters', 'Your Voice', 'Events', 'Voting Info', 'Volunteer', 'Donate', 'Contact'];
 const featuredVideoUrl =
       "https://www.facebook.com/reel/1364207198371468/";
 function anchor(name) {
   return '#' + name.toLowerCase().replaceAll(' ', '-');
 }
 
-function CampaignLaunchBanner() {
+function VotingBanner() {
   return (
-    <a className="campaignLaunchBanner" href="#events">
+    <a className="votingBanner" href="#voting-info">
       <span>
-        CAMPAIGN LAUNCH • SUNDAY, SEPTEMBER 20 • 1:00 PM–3:00 PM • QUAYSIDE COHOUSING VILLAGE • CLICK FOR DETAILS
+        CITY OF NORTH VANCOUVER VOTING INFO • ADVANCE VOTING OCT. 7, 10, 13, 14 & 15 • GENERAL VOTING DAY OCT. 17, 8 AM–8 PM • CLICK FOR TIMES & LOCATIONS
       </span>
     </a>
   );
@@ -82,9 +82,7 @@ const campaignEvents = [
     address: '510 Chesterfield Ave, North Vancouver, BC V7M 3L2',
     plusCode: '8W8C+JQ North Vancouver, British Columbia',
     time: '1:00 PM – 3:00 PM',
-    mapUrl: 'https://maps.app.goo.gl/RLAbmtvpvo3CEG697?g_st=ac',
-    featured: true,
-    poster: '/assets/campaign-launch-september-20-2026.png'
+    mapUrl: 'https://maps.app.goo.gl/RLAbmtvpvo3CEG697?g_st=ac'
   },
   {
     date: 'Saturday, September 26, 2026',
@@ -465,8 +463,6 @@ function Voice() {
 }
 
 function Events() {
-  const launchEvent = campaignEvents.find((event) => event.featured);
-
   return (
     <section id="events" className="section eventsSection">
       <div className="eventsIntro">
@@ -478,53 +474,8 @@ function Events() {
         </p>
       </div>
 
-      {launchEvent && (
-        <article className="featured-event-card campaignLaunchCard">
-          <div className="event-card-label">Official Campaign Launch</div>
-          <h3>{launchEvent.title}</h3>
-
-          <div className="event-card-details">
-            <div>
-              <Calendar />
-              <div>
-                <strong>{launchEvent.date}</strong>
-                <p>{launchEvent.time}</p>
-              </div>
-            </div>
-            <div>
-              <MapPin />
-              <div>
-                <strong>{launchEvent.location}</strong>
-                <p>{launchEvent.address}</p>
-                <small>{launchEvent.plusCode}</small>
-              </div>
-            </div>
-          </div>
-
-          <p className="event-card-description">
-            Join Sean, volunteers, and supporters as we officially launch the campaign
-            for North Vancouver City Council.
-          </p>
-
-          <div className="event-card-actions">
-            <a className="btn primary" href={launchEvent.mapUrl} target="_blank" rel="noopener noreferrer">
-              Get Directions
-            </a>
-            <a className="btn secondary" href={launchEvent.poster} target="_blank" rel="noopener noreferrer">
-              View Campaign Launch Flyer
-            </a>
-          </div>
-
-          <img
-            className="campaignLaunchPoster"
-            src={launchEvent.poster}
-            alt="Sean Alexander Campaign Launch on September 20, 2026 at Quayside Cohousing Village"
-          />
-        </article>
-      )}
-
       <div className="eventsGrid">
-        {campaignEvents.filter((event) => !event.featured).map((event) => (
+        {campaignEvents.map((event) => (
           <article className="eventListCard" key={`${event.date}-${event.location}`}>
             <p className="eventType">{event.title}</p>
             <h3>{event.date}</h3>
@@ -551,6 +502,227 @@ function Events() {
         >
           Invite Sean to an event
         </a>
+      </div>
+    </section>
+  );
+}
+
+const generalVotingLocations = [
+  {
+    name: 'Larson Elementary School',
+    room: 'Gym',
+    address: '2605 Larson Rd',
+    curbside: true,
+    mapUrl: 'https://www.google.com/maps/place/Larson+Elementary+School/@49.3333788,-123.0874032,17z/data=!3m1!4b1!4m5!3m4!1s0x548670243bc1bcb3:0x61ad417397c50bba!8m2!3d49.3333796!4d-123.0848766'
+  },
+  {
+    name: 'Carson Graham Secondary School',
+    room: 'Small Gym',
+    address: '2145 Jones Ave',
+    curbside: true,
+    mapUrl: 'https://www.google.com/maps/place/Carson+Graham+Secondary+School/@49.3290149,-123.083973,17z/data=!3m1!4b1!4m5!3m4!1s0x5486703ab64882a1:0xfe90a54740b2e4f2!8m2!3d49.3290127!4d-123.0817945'
+  },
+  {
+    name: 'Westview Elementary School',
+    room: 'Gym',
+    address: '641 West 17th St',
+    curbside: true,
+    mapUrl: 'https://www.google.com/maps/place/Westview+Elementary+School/@49.3238414,-123.0916625,17z/data=!3m1!4b1!4m5!3m4!1s0x54867033ce40b619:0xc7289bc94aa40f9b!8m2!3d49.3239649!4d-123.0895584'
+  },
+  {
+    name: 'Queen Mary Elementary School',
+    room: 'Gym',
+    address: '230 W Keith Rd',
+    curbside: true,
+    mapUrl: 'https://goo.gl/maps/WwKoYUWK1aswZbEZ7'
+  },
+  {
+    name: 'Ridgeway Elementary School',
+    room: 'Gym',
+    address: '420 East 8th St',
+    curbside: true,
+    mapUrl: 'https://maps.app.goo.gl/w43U411jFpFdFc3Y7'
+  },
+  {
+    name: 'Sutherland Secondary School',
+    room: 'Gym',
+    address: '1860 Sutherland Ave',
+    curbside: true,
+    mapUrl: 'https://www.google.com/maps/place/Sutherland+Secondary+School/@49.3259414,-123.0551626,17z/data=!3m1!4b1!4m5!3m4!1s0x5486706b426f99df:0xe19ecb0e0282cedb!8m2!3d49.3259496!4d-123.0531856'
+  },
+  {
+    name: 'Harry Jerome Community Recreation Centre',
+    room: '',
+    address: '130 East 23rd St',
+    curbside: false,
+    mapUrl: 'https://www.google.com/maps/place/130+E+23+St,+North+Vancouver,+BC+V7L+3E2/@49.3302733,-123.073301,17z/data=!3m1!4b1!4m5!3m4!1s0x5486703da2a7e623:0xe43ce227dd29ace8!8m2!3d49.3302733!4d-123.0707261?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D'
+  },
+  {
+    name: 'John Braithwaite Community Centre',
+    room: 'Shoreline Room',
+    address: '145 West 1st St',
+    curbside: false,
+    mapUrl: 'https://maps.app.goo.gl/VHFx9o2nzE7WUywp9'
+  },
+  {
+    name: 'Pipe Shop',
+    room: '',
+    address: '115 Victory Ship Way',
+    curbside: false,
+    mapUrl: 'https://www.google.com/maps/place/The+Pipe+Shop/@49.3103509,-123.0815279,17z/data=!3m1!4b1!4m5!3m4!1s0x5486704d23d10cbb:0x8c8a18f5c7c15915!8m2!3d49.3103583!4d-123.0793318'
+  }
+];
+
+const voterGuides = [
+  ['French', 'https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Election/2026/voter_guide_french.pdf'],
+  ['简体中文 / Simplified Chinese', 'https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Election/2026/voter_guide_simplified_chinese.pdf'],
+  ['繁體中文 / Traditional Chinese', 'https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Election/2026/voter_guide_traditional_chinese.pdf'],
+  ['فارسی / Farsi', 'https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Election/2026/voter_guide_farsi.pdf'],
+  ['한국어 / Korean', 'https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Election/2026/voter_guide_korean.pdf'],
+  ['ਪੰਜਾਬੀ / Punjabi', 'https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Election/2026/voter_guide_punjabi.pdf']
+];
+
+function VotingInfo() {
+  return (
+    <section id="voting-info" className="section votingInfoSection">
+      <div className="votingInfoIntro">
+        <p className="eyebrow center">2026 City of North Vancouver Municipal Election</p>
+        <h2 className="center">Make Your Plan to Vote</h2>
+        <p className="center narrow">
+          City of North Vancouver voters can vote in advance on October 7, 10, 13, 14 or 15,
+          or on General Voting Day on Saturday, October 17, 2026.
+        </p>
+        <p className="votingSourceNote">
+          Voting information below is reproduced for convenience from the City of North Vancouver.
+          Please check the City’s official election page for the latest official information.
+        </p>
+        <a
+          className="btn primary votingOfficialButton"
+          href="https://www.cnv.org/City-Hall/General-Local-Election/2026-General-Local-Election"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Official City Election Information <ExternalLink />
+        </a>
+      </div>
+
+      <div className="votingHighlightGrid">
+        <article className="votingCard votingCardAdvance">
+          <div className="votingCardIcon"><Calendar /></div>
+          <p className="votingKicker">Advance Voting</p>
+          <h3>City Hall</h3>
+          <p className="votingAddress"><MapPin /> 141 West 14th St, North Vancouver</p>
+
+          <div className="votingDates">
+            <div><strong>Wednesday, Oct. 7</strong><span>8:00 a.m. – 8:00 p.m.</span></div>
+            <div><strong>Saturday, Oct. 10</strong><span>10:00 a.m. – 4:00 p.m.</span></div>
+            <div><strong>Tuesday, Oct. 13</strong><span>10:00 a.m. – 7:00 p.m.</span></div>
+            <div><strong>Wednesday, Oct. 14</strong><span>8:00 a.m. – 8:00 p.m.</span></div>
+            <div><strong>Thursday, Oct. 15</strong><span>10:00 a.m. – 6:00 p.m.</span></div>
+          </div>
+
+          <div className="votingNotice">
+            <strong>Curbside voting:</strong> Available for advance polls on 13th Street in front of City Hall.
+          </div>
+        </article>
+
+        <article className="votingCard votingCardElectionDay">
+          <div className="votingCardIcon"><MapPin /></div>
+          <p className="votingKicker">General Voting Day</p>
+          <h3>Saturday, October 17, 2026</h3>
+          <div className="electionDayTime">8:00 a.m. – 8:00 p.m.</div>
+          <p>
+            Eligible voters can cast their ballot at any of the nine City of North Vancouver
+            voting locations listed below.
+          </p>
+          <a className="btn primary" href="#general-voting-locations">
+            See Voting Locations <ArrowRight />
+          </a>
+        </article>
+      </div>
+
+      <div id="general-voting-locations" className="votingSubsection">
+        <p className="eyebrow center">General Voting Day Locations</p>
+        <h2 className="center">Choose the location that works for you.</h2>
+        <p className="center narrow">
+          Saturday, October 17, 2026 • 8:00 a.m. – 8:00 p.m.
+        </p>
+
+        <div className="pollingGrid">
+          {generalVotingLocations.map((location) => (
+            <article className="pollingCard" key={location.name}>
+              <MapPin />
+              <div>
+                <h3>{location.name}</h3>
+                {location.room && <p className="pollingRoom">{location.room}</p>}
+                <p>{location.address}</p>
+                {location.curbside && (
+                  <span className="curbsideBadge">Curbside voting available</span>
+                )}
+                <a href={location.mapUrl} target="_blank" rel="noopener noreferrer">
+                  Open Map <ExternalLink size={16} />
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="votingNotice votingNoticeWide">
+          <strong>Curbside voting on General Voting Day:</strong> Available at the school-gym
+          polling locations marked above. Look for the curbside voting sign in the designated
+          parking spots near the voting location and call the number on the sign. An election
+          official will come out to assist you.
+        </div>
+      </div>
+
+      <div className="votingLowerGrid">
+        <article className="votingInfoBox">
+          <p className="votingKicker">Special Voting for Patients</p>
+          <h3>Healthcare Facilities</h3>
+          <p>
+            <strong>Lions Gate Hospital &amp; HOpe Centre</strong><br />
+            October 10, 2026 • 9:00 a.m. – 4:00 p.m.
+          </p>
+          <p>
+            <strong>Evergreen House &amp; Northshore Hospice</strong><br />
+            October 13, 2026 • 9:30 a.m. – 2:30 p.m.
+          </p>
+        </article>
+
+        <article className="votingInfoBox">
+          <p className="votingKicker">Key Dates</p>
+          <h3>2026 Election Timeline</h3>
+          <ul className="votingTimeline">
+            <li><strong>October 7:</strong> Start of Advance Voting</li>
+            <li><strong>October 15:</strong> End of Advance Voting</li>
+            <li><strong>October 17:</strong> General Voting Day</li>
+            <li><strong>October 17:</strong> Preliminary Election Results announced</li>
+            <li><strong>October 21:</strong> Last day for declaration of official election results by voting</li>
+          </ul>
+        </article>
+      </div>
+
+      <div className="languageGuides">
+        <p className="eyebrow center">Voting Information in Other Languages</p>
+        <h2 className="center">Voter Guides</h2>
+        <p className="center narrow">
+          Open the City of North Vancouver voter guide in the language you prefer.
+        </p>
+
+        <div className="languageGuideGrid">
+          {voterGuides.map(([language, url]) => (
+            <a
+              className="languageGuideLink"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={language}
+            >
+              <span>{language}</span>
+              <ExternalLink />
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -988,7 +1160,7 @@ function Contact() {
 function App() {
   return (
     <>
-      <CampaignLaunchBanner />
+      <VotingBanner />
       <Header />
       <Hero />
       <FeaturedVideo />
@@ -997,6 +1169,7 @@ function App() {
       <WhatMatters />
       <Voice />
       <Events />
+      <VotingInfo />
       <Volunteer />
       <Donate />
       <Media />
