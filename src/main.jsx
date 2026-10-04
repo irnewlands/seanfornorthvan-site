@@ -629,7 +629,40 @@ function VotingInfo() {
           </ul>
         </article>
       </div>
+      
+<div className="votingHelpBox">
+  <div className="votingHelpIcon">
+    <Mail />
+  </div>
 
+  <div className="votingHelpContent">
+    <p className="votingKicker">Need Assistance?</p>
+    <h3>Having difficulties voting?</h3>
+
+    <p className="votingHelpIntro">
+      Contact us and we’ll be happy to help you find the voting information you need.
+    </p>
+
+    <div className="votingHelpContacts">
+      <a href="mailto:sda.cnv.2026@gmail.com">
+        <Mail />
+        <span>
+          <small>E-mail</small>
+          <strong>sda.cnv.2026@gmail.com</strong>
+        </span>
+      </a>
+
+      <a href="tel:+12368893500">
+        <span className="votingPhoneIcon">☎</span>
+        <span>
+          <small>Tel</small>
+          <strong>236-889-3500</strong>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+      
       <div className="languageGuides">
         <p className="eyebrow center">Voting Information in Other Languages</p>
         <h2 className="center">Voter Guides</h2>
